@@ -1,6 +1,6 @@
 {
   "name": "vue-component-library.hello-b",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A component that says \"HelloB\" with green text.",
   "author": {
     "name": "Frederik Wagner",
