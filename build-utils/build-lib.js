@@ -213,6 +213,7 @@ function generatePackageJson(package) {
   return JSON.stringify(
     {
       name: package.name,
+      version: libConfig.version,
       description: package.description,
       author: libConfig.author,
       license: 'MIT',
