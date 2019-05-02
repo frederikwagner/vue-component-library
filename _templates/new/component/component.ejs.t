@@ -15,3 +15,12 @@ export default {
 // Import global styles
 // e.g. @import "@styles/...";
 </style>
+
+<meta>
+{
+  "description": "A component that..."
+}
+</meta>
+
+<example>
+</example>
