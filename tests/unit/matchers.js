@@ -1,3 +1,11 @@
+/*
+ * COPYRIGHT AND LICENSE
+ * ---------------------
+ * Originally authored by Chris Fritz (c) 2018 -> present
+ * and licensed under the MIT License.
+ * (https://github.com/chrisvfritz/hello-vue-components)
+ */
+
 // See these docs for details on Jest's matcher utils:
 // https://facebook.github.io/jest/docs/en/expect.html#thisutils
 

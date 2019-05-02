@@ -1,3 +1,11 @@
+/*
+ * COPYRIGHT AND LICENSE
+ * ---------------------
+ * Originally authored by Chris Fritz (c) 2018 -> present
+ * and licensed under the MIT License.
+ * (https://github.com/chrisvfritz/hello-vue-components)
+ */
+
 const { interpolateName } = require('loader-utils')
 
 // Modify the export of every .vue file so that the

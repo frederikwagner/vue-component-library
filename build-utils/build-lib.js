@@ -1,3 +1,11 @@
+/*
+ * COPYRIGHT AND LICENSE
+ * ---------------------
+ * Originally authored by Chris Fritz (c) 2018 -> present
+ * and licensed under the MIT License.
+ * (https://github.com/chrisvfritz/hello-vue-components)
+ */
+
 /* eslint-disable no-console */
 const fs = require('fs-extra')
 const path = require('path')

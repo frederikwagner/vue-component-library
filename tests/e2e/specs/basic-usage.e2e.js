@@ -1,3 +1,11 @@
+/*
+ * COPYRIGHT AND LICENSE
+ * ---------------------
+ * Originally authored by Chris Fritz (c) 2018 -> present
+ * and licensed under the MIT License.
+ * (https://github.com/chrisvfritz/hello-vue-components)
+ */
+
 describe('Basic usage', () => {
   it('lib script tag in the browser', () => {
     cy.visit('/lib.html')
