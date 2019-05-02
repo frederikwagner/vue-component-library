@@ -1,6 +1,6 @@
 # Vue component library
 
-> A component library built on top of [Chris Fritz's](https://github.com/chrisvfritz) example component library -> https://github.com/chrisvfritz/hello-vue-components.
+> A component library built on top of [Chris Fritz's](https://github.com/chrisvfritz) example component library -> https://github.com/chrisvfritz/hello-vue-components (licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)).
 
 ## Usage
 
