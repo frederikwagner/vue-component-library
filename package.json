@@ -10,7 +10,8 @@
     "test": "npm run unit && npm run e2e",
     "prepublishOnly": "npm run lint && npm run test && node build-utils/build-lib.js",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "new": "hygen new"
   },
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
@@ -34,6 +35,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "fs-extra": "^7.0.1",
     "globby": "^9.0.0",
+    "hygen": "^4.0.2",
     "imagemin-lint-staged": "^0.4.0",
     "lerna": "^3.4.3",
     "lint-staged": "^8.0.4",
