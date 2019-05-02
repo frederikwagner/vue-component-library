@@ -1,5 +1,5 @@
 ---
-to: "src/<%= h.inflection.camelize(name) %>.vue"
+to: "src/<%= name %>.vue"
 ---
 <template>
   <div />
@@ -7,7 +7,7 @@ to: "src/<%= h.inflection.camelize(name) %>.vue"
 
 <script>
 export default {
-  name: "<%= h.inflection.camelize(name) %>",
+  name: "<%= name %>",
 }
 </script>
 
@@ -23,4 +23,6 @@ export default {
 </meta>
 
 <example>
+  <!-- No props or content are necessary. -->
+  <<%= name %>></<%= name %>>
 </example>
