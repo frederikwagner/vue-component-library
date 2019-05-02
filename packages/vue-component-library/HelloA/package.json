@@ -1,6 +1,5 @@
 {
   "name": "vue-component-library.hello-a",
-  "version": "0.0.1",
   "description": "A component that says \"HelloA\" with orange text.",
   "author": {
     "name": "Frederik Wagner",
