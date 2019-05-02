@@ -4,16 +4,14 @@
 //
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
-import HelloA from './HelloA.vue'
-import HelloB from './HelloB.vue'
+import BaseButton from './BaseButton.vue'
 
 // Export components individually
-export { HelloA, HelloB }
+export { BaseButton }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
-  Vue.component('HelloA', HelloA)
-  Vue.component('HelloB', HelloB)
+  Vue.component('BaseButton', BaseButton)
 }
 
 // Export the library as a plugin
