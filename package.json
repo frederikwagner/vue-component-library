@@ -8,7 +8,9 @@
     "unit": "vue-cli-service test:unit",
     "e2e": "cross-env VUE_APP_E2E=true npm run build && vue-cli-service test:e2e",
     "test": "npm run unit && npm run e2e",
-    "prepublishOnly": "npm run lint && npm run test && node build-utils/build-lib.js"
+    "prepublishOnly": "npm run lint && npm run test && node build-utils/build-lib.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
@@ -45,7 +47,8 @@
     "stylelint-config-recess-order": "^2.0.0",
     "stylelint-config-standard": "^18.2.0",
     "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "vuepress": "^0.14.11"
   },
   "babel": {
     "presets": [
