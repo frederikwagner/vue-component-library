@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <HelloA />
-    <HelloB />
+    <BaseButton>
+      Submit
+    </BaseButton>
   </div>
 </template>
