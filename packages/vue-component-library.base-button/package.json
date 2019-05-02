@@ -1,14 +1,14 @@
 {
-  "name": "vue-component-library",
+  "name": "vue-component-library.base-button",
   "version": "0.0.1",
-  "description": "A component library for Vue.js.",
+  "description": "A component that...",
   "author": {
     "name": "Frederik Wagner",
     "email": "fwexeter@gmail.com",
     "github": "frederikwagner"
   },
   "license": "MIT",
-  "homepage": "https://www.npmjs.com/package/vue-component-library",
+  "homepage": "https://www.npmjs.com/package/vue-component-library.base-button",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/frederikwagner/vue-component-library.git"
