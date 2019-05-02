@@ -1,6 +1,6 @@
-# hello-vue-components.hello-a
+# vue-component-library.hello-b
 
-> A component that says "HelloA" with orange text.
+> A component that says "HelloB" with green text.
 
 ## Installation
 
@@ -14,7 +14,7 @@ Drop the component in with a `<script>` tag alongside Vue:
 </div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/hello-vue-components.hello-a"></script>
+<script src="https://unpkg.com/vue-component-library.hello-b"></script>
 <script>
 new Vue({ el: '#app' })
 </script>
@@ -25,26 +25,26 @@ new Vue({ el: '#app' })
 Install the component with NPM:
 
 ```bash
-npm install hello-vue-components.hello-a
+npm install vue-component-library.hello-b
 ```
 
 Then import the component:
 
 ```js
-import HelloA from 'hello-vue-components.hello-a'
+import HelloB from 'vue-component-library.hello-b'
 ```
 
 And either globally register it for use in all components:
 
 ```js
-Vue.component(HelloA, 'hello-vue-components.hello-a')
+Vue.component(HelloB, 'vue-component-library.hello-b')
 ```
 
 or locally register it for use in an individual component:
 
 ```js
 export default {
-components: { HelloA }
+components: { HelloB }
 }
 ```
 
@@ -52,5 +52,5 @@ components: { HelloA }
 
 ```html
 <!-- No props or content are necessary. -->
-<hello-a></hello-a>
+<hello-b></hello-b>
 ```

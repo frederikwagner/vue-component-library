@@ -1,12 +1,12 @@
 {
-  "name": "hello-vue-components",
-  "description": "An example component library built with Vue CLI 3.",
+  "name": "vue-component-library",
+  "description": "A component library for Vue.js.",
   "author": {
-    "name": "Chris Fritz",
-    "email": "chrisvfritz@gmail.com",
-    "github": "chrisvfritz"
+    "name": "Frederik Wagner",
+    "email": "fwexeter@gmail.com",
+    "github": "frederikwagner"
   },
   "peerDependencies": {
-    "vue": ">=2.0.0"
+    "vue": ">=2.6.0"
   }
 }

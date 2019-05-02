@@ -1,7 +1,7 @@
 
-# hello-vue-components
+# vue-component-library
 
-> An example component library built with Vue CLI 3.
+> A component library for Vue.js.
 
 ## Installation
 
@@ -15,7 +15,7 @@ Drop the library in with a `<script>` tag alongside Vue:
 </div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/hello-vue-components"></script>
+<script src="https://unpkg.com/vue-component-library"></script>
 <script>
 new Vue({ el: '#app' })
 </script>
@@ -29,7 +29,7 @@ Or, if you only want to use a small subset of components, drop them in individua
 </div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/hello-vue-components/HelloA"></script>
+<script src="https://unpkg.com/vue-component-library/HelloA"></script>
 <script>
 new Vue({ el: '#app' })
 </script>
@@ -40,24 +40,24 @@ new Vue({ el: '#app' })
 Install the library with NPM:
 
 ```bash
-npm install hello-vue-components
+npm install vue-component-library
 ```
 
 Then either import the library and either globally register all components with:
 
 ```js
-import HelloVueComponents from 'hello-vue-components'
+import VueComponentLibrary from 'vue-component-library'
 
-Vue.use(HelloVueComponents)
+Vue.use(VueComponentLibrary)
 ```
 
 or import and locally register a single component with:
 
 ```js
-import { HelloA } from 'hello-vue-components'
+import { HelloA } from 'vue-component-library'
 
 export default {
-components: { HelloVueComponents }
+components: { VueComponentLibrary }
 }
 ```
 
