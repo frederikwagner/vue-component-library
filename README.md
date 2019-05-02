@@ -1,6 +1,6 @@
-# Hello Vue Components
+# Vue component library
 
-> An example component library built with Vue CLI 3.
+> A component library built on top of [Chris Fritz's](https://github.com/chrisvfritz) example component library -> [https://github.com/chrisvfritz/hello-vue-components].
 
 ## Usage
 
