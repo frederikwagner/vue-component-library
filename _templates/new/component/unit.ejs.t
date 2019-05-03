@@ -1,8 +1,8 @@
 ---
-to: "src/<%= 'Base' + h.changeCase.pascal(name) %>.unit.js"
+to: "src/<%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %>.unit.js"
 ---
-import <%= 'Base' + h.changeCase.pascal(name) %> from './<%= 'Base' + h.changeCase.pascal(name) %>';
+import <%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %> from './<%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %>';
 
 test('exports a valid component', () => {
-  expect(<%= 'Base' + h.changeCase.pascal(name) %>).toBeAComponent()
+  expect(<%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %>).toBeAComponent()
 })

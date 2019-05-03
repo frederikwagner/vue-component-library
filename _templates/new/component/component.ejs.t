@@ -1,19 +1,19 @@
 ---
-to: "src/<%= 'Base' + h.changeCase.pascal(name) %>.vue"
+to: "src/<%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %>.vue"
 ---
 <template>
-  <div />
+  <div class="<%= h.components.prefix.toLowerCase() + '-' + h.changeCase.snake(name).replace(/_/g, '-') %>" />
 </template>
 
 <script>
 export default {
-  name: "<%= 'Base' + h.changeCase.pascal(name) %>",
+  name: "<%= h.inflection.capitalize(h.components.prefix.toLowerCase()) + h.changeCase.pascal(name) %>",
 }
 </script>
 
 <style lang="scss" scoped>
 
-$c: ".<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>";
+$c: ".<%= h.components.prefix.toLowerCase() + '-' + h.changeCase.snake(name).replace(/_/g, '-') %>";
 
 // #{$c} {}
 </style>
@@ -26,5 +26,5 @@ $c: ".<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>";
 
 <example>
   <!-- No props or content are necessary. -->
-  <<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>></<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>>
+  <<%= h.components.prefix.toLowerCase() + '-' + h.changeCase.snake(name).replace(/_/g, '-') %>></<%= h.components.prefix.toLowerCase() + '-' + h.changeCase.snake(name).replace(/_/g, '-') %>>
 </example>
