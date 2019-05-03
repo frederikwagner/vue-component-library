@@ -4,7 +4,7 @@ This project is dedicated to those who want to create their own vue component li
 
 ## [Documentation](https://www.vuecomponentlibrary.com)
 
-Read the [docs](https://www.vuecomponentlibrary.com) to learn how you can use the vue-component-library in your web applications or how to create your own component library.
+Read the [docs](https://www.vuecomponentlibrary.com) to learn how to use the vue component library in your web applications or how to create your own component library.
 
 ---
 
