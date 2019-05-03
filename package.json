@@ -14,7 +14,7 @@
     "new": "hygen new"
   },
   "gitHooks": {
-    "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
+    "pre-commit": "cross-env PRE_COMMIT=true lint-staged && npm run docs:build"
   },
   "dependencies": {},
   "devDependencies": {
