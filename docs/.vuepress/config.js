@@ -21,8 +21,6 @@ module.exports = {
         collapsable: false,
         children: [
           ['/use/getting-started', 'Getting started'],
-          ['/use/base-components', 'Base components'],
-          ['/use/layout-components', 'Layout components'],
           ['/use/global-styles', 'Global styles'],
         ]
       },
@@ -30,6 +28,7 @@ module.exports = {
         title: 'Components',
         collapsable: false,
         children: [
+          ['/components/component-types', 'Component types'],
           ['/components/base-button', '<base-button>'],
           ['/components/base-input', '<base-input>'],
         ]

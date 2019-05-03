@@ -4,9 +4,9 @@ Welcome to the vue component library docs. This project is dedicated to those wh
 
 ## Table of contents
 
-- :wrench: Create your own component library.
-- :zap: Use the standard component library.
-- :blue_book: Standard components guide.
+- :wrench: [Create your own component library](create/getting-started.html).
+- :zap: [Use the standard component library](use/getting-started.html).
+- :blue_book: [Standard components guide](components/component-types.html).
 
 ## Acknowledgments
 
