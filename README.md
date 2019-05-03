@@ -2,7 +2,9 @@
 
 > A component library built on top of [Chris Fritz's](https://github.com/chrisvfritz) example component library -> https://github.com/chrisvfritz/hello-vue-components (licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)).
 
-## Usage
+## Using the component library
+
+The component library comes with different package builds allowing you to import the library in a variety of ways.
 
 ### Directly in the browser
 
@@ -10,12 +12,11 @@ Drop the library in with a `<script>` tag alongside Vue to globally install all 
 
 ```html
 <div id="app">
-  <hello-a></hello-a>
-  <hello-b></hello-b>
+  <base-button></base-button>
 </div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/hello-vue-components"></script>
+<script src="https://unpkg.com/vue-component-library"></script>
 <script>
   new Vue({ el: '#app' })
 </script>
@@ -25,13 +26,11 @@ Or, if you only want to use a small subset of components, drop them in individua
 
 ```html
 <div id="app">
-  <hello-a></hello-a>
-  <hello-b></hello-b>
+  <base-button></base-button>
 </div>
 
 <script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/hello-vue-components/HelloA"></script>
-<script src="https://unpkg.com/hello-vue-components/HelloB"></script>
+<script src="https://unpkg.com/vue-component-library/BaseButton"></script>
 <script>
   new Vue({ el: '#app' })
 </script>
@@ -42,32 +41,38 @@ Or, if you only want to use a small subset of components, drop them in individua
 Install the library with NPM:
 
 ```bash
-npm install hello-vue-components
+npm install vue-component-library
 ```
 
-Then register the library as a plugin to globally install all components:
+You can choose to import the library globally, which will make all of the components available across your project (but will also increase the bundle size of your application), or you can import individual components locally.
+
+#### Register the library globally
+
+Register the library as a plugin to globally install all components:
 
 ```js
-import HelloVueComponents from 'hello-vue-components'
+import VueComponentLibrary from 'vue-component-library'
 
-Vue.use(HelloVueComponents)
+Vue.use(VueComponentLibrary)
 ```
+
+#### Import components locally
 
 Or, import components individually for local registration:
 
 ```js
-import { HelloA, HelloB } from 'hello-vue-components'
+import { BaseButton, BaseInput } from 'vue-component-library'
 
 export default {
-  components: { HelloA, HelloB }
+  components: { BaseButton, BaseInput }
 }
 ```
 
-#### Individually packaged components
+##### Individually packaged components
 
 If you only want to use a small subset of components, only import individually packaged components to reduce the size of your application:
 
 ```js
-import HelloA from 'hello-vue-components.HelloA'
-import HelloB from 'hello-vue-components.HelloB'
+import BaseButton from 'vue-component-library.BaseButton'
+import BaseInput from 'vue-component-library.BaseInput'
 ```
