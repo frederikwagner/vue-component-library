@@ -1,6 +1,12 @@
 # Vue component library
 
-> A component library built on top of [Chris Fritz's](https://github.com/chrisvfritz) example component library -> https://github.com/chrisvfritz/hello-vue-components (licensed under the [MIT License](https://en.wikipedia.org/wiki/MIT_License)).
+This project is dedicated to those who want to create their own vue component library or use a standard vue component library in their web applications.
+
+## Acknowledgments
+
+This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
+
+---
 
 ## Using the component library
 
