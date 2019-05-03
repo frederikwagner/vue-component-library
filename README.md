@@ -2,9 +2,9 @@
 
 This project is dedicated to those who want to create their own vue component library or use a standard vue component library in their web applications.
 
-## Acknowledgments
+## [Documentation](https://www.vuecomponentlibrary.com)
 
-This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
+Read the [docs](https://www.vuecomponentlibrary.com) to learn how you can use the vue-component-library in your web applications or how to create your own component library.
 
 ---
 
@@ -82,3 +82,9 @@ If you only want to use a small subset of components, only import individually p
 import BaseButton from 'vue-component-library.BaseButton'
 import BaseInput from 'vue-component-library.BaseInput'
 ```
+
+---
+
+## Acknowledgments
+
+This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
