@@ -8,7 +8,7 @@ module.exports = {
       ['/', 'Home'],
       ['/inspiration', 'Inspiration'],
       {
-        title: 'Creating your own',
+        title: 'Creating your own library',
         collapsable: false,
         children: [
           ['/create/getting-started', 'Getting started'],
@@ -18,7 +18,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Using the library',
+        title: 'Using the standard library',
         collapsable: false,
         children: [
           ['/use/getting-started', 'Getting started'],
