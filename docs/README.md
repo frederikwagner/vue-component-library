@@ -10,7 +10,7 @@ Welcome to the vue component library docs. This project is dedicated to those wh
 
 ## Acknowledgments
 
-This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [example component library](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
+This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
 
 ## Contributing
 
