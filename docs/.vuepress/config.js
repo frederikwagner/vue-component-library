@@ -25,7 +25,7 @@ module.exports = {
         ]
       },
       {
-        title: 'Components',
+        title: 'Standard components',
         collapsable: false,
         children: [
           ['/components/component-types', 'Component types'],
