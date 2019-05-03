@@ -1,8 +1,8 @@
 ---
-to: "src/<%= name %>.unit.js"
+to: "src/<%= 'Base' + h.changeCase.pascal(name) %>.unit.js"
 ---
-import <%= name %> from './<%= name %>';
+import <%= 'Base' + h.changeCase.pascal(name) %> from './<%= 'Base' + h.changeCase.pascal(name) %>';
 
 test('exports a valid component', () => {
-  expect(<%= name %>).toBeAComponent()
+  expect(<%= 'Base' + h.changeCase.pascal(name) %>).toBeAComponent()
 })

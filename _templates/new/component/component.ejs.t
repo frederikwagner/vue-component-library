@@ -1,5 +1,5 @@
 ---
-to: "src/<%= name %>.vue"
+to: "src/<%= 'Base' + h.changeCase.pascal(name) %>.vue"
 ---
 <template>
   <div />
@@ -7,13 +7,15 @@ to: "src/<%= name %>.vue"
 
 <script>
 export default {
-  name: "<%= name %>",
+  name: "<%= 'Base' + h.changeCase.pascal(name) %>",
 }
 </script>
 
 <style lang="scss" scoped>
-// Import global styles
-// e.g. @import "@styles/...";
+
+$c: ".<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>";
+
+// #{$c} {}
 </style>
 
 <meta>
@@ -24,5 +26,5 @@ export default {
 
 <example>
   <!-- No props or content are necessary. -->
-  <<%= name %>></<%= name %>>
+  <<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>></<%= 'base-' + h.changeCase.snake(name).replace(/_/g, '-') %>>
 </example>
