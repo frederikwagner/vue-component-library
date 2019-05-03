@@ -20,7 +20,7 @@ The Vue style guide defines base components as presentational, dumb, or pure com
 
 The Vue style guide defines single-instance components as only ever having a single active instance. They should begin with the "The" prefix, to denote that there can be only one.
 
-This does not mean the component is only used in a single page, but it will only be used once per page. This project deviates from the Vue style guide by allowing props in single-instance components, to allow for more dynamic layouts and usages.
+This does not mean the component is only used in a single page, but it will only be used once per page. This project deviates from the Vue style guide by allowing props in single-instance components, to allow for more dynamic layouts and use-cases.
 
 ```html
 <!-- Example of a single-instance component -->
