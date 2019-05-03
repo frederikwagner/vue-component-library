@@ -1,3 +1,5 @@
+const componentsPrefix = require("../../../components.config.js").prefix;
+
 module.exports = [
   {
     type: "input",
@@ -7,10 +9,10 @@ module.exports = [
       if (!value.length) {
         return "Components must have a name.";
       } else if (
-        value.slice(0, 4)
-          .toLowerCase() === 'base'
+        value.slice(0, componentsPrefix.length)
+          .toLowerCase() === componentsPrefix
       ) {
-        return "Duplicate prefix: 'base'";
+        return `Duplicate prefix: '${componentsPrefix}'`;
       }
       return true;
     },
