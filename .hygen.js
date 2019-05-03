@@ -1,9 +1,9 @@
-const componentConfig = require("./components.config.js");
+const componentsConfig = require("./components.config.js");
 
 module.exports = {
   helpers: {
     components: {
-      prefix: componentConfig.prefix,
+      prefix: componentsConfig.prefix,
     },
   }
 }
