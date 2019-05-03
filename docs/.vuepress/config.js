@@ -3,6 +3,7 @@ module.exports = {
   description: 'Vue component library documentation',
   themeConfig: {
     repo: 'frederikwagner/vue-component-library',
+    sidebarDepth: 2,
     sidebar: [
       ['/', 'Home'],
       ['/inspiration', 'Inspiration'],
