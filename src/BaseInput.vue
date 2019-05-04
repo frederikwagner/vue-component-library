@@ -1,5 +1,5 @@
 <template>
-  <div />
+  <div class="base-input" />
 </template>
 
 <script>
@@ -9,17 +9,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// Import global styles
-// e.g. @import "@styles/...";
+
+$c: ".base-input";
+
+// #{$c} {}
 </style>
-
-<meta>
-{
-  "description": "A component that..."
-}
-</meta>
-
-<example>
-  <!-- No props or content are necessary. -->
-  <BaseInput></BaseInput>
-</example>
