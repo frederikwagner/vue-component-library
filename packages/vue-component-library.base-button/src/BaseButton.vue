@@ -15,7 +15,7 @@ $c: ".base-button";
 
 #{$c} {
   height: 32px;
-  border: 1px solid black;
+  border: 2x solid black;
   border-radius: 4px;
 }
 </style>

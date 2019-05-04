@@ -9,8 +9,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-$c: ".base-display-text";
-
-// #{$c} {}
+@import "./styles/components/BaseDisplayText.scss";
 </style>

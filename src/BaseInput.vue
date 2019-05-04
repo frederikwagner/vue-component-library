@@ -9,8 +9,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-$c: ".base-input";
-
-// #{$c} {}
+@import "./styles/components/BaseInput.scss";
 </style>

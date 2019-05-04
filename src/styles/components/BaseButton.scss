@@ -1,0 +1,13 @@
+@import "../foundation/colors.scss";
+
+.base-button {
+  height: 40px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border-width: 2px;
+  border-color: $color-ink-900;
+  border-radius: 2px;
+}

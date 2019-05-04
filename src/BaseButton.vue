@@ -11,11 +11,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$c: ".base-button";
-
-#{$c} {
-  height: 32px;
-  border: 1px solid black;
-  border-radius: 4px;
-}
+@import "./styles/components/BaseButton.scss";
 </style>
