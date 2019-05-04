@@ -1,6 +1,10 @@
-# Project documentation
+# Home
 
 Welcome to the vue component library docs. This project is dedicated to those who want to create their own vue component library or use a standard vue component library in their web applications.
+
+::: tip IMPORTANT
+This project is still a work in progress. Be careful when using it in production environments.
+:::
 
 ## Table of contents
 
