@@ -31,6 +31,7 @@ module.exports = {
         children: [
           ['/components/component-types', 'Component types'],
           ['/components/base-button', '<base-button>'],
+          ['/components/base-display-text', '<base-display-text>'],
           ['/components/base-input', '<base-input>'],
         ]
       },
