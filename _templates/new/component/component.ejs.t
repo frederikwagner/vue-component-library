@@ -12,8 +12,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-$c: ".<%= h.components.toKebabCase(name) %>";
-
-// #{$c} {}
+@import "./styles/components/<%= h.components.toPascalCase(name) %>.scss";
 </style>
