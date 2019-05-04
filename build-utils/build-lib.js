@@ -13,6 +13,7 @@ const { execSync } = require('child_process')
 const libConfig = require('../lib')
 const _ = require('lodash')
 const parseComponent = require('@vue/component-compiler-utils').parse
+const changeCase = require('change-case')
 
 console.info("🚀 Let's build this thing!")
 
@@ -237,84 +238,12 @@ function generatePackageJson(package) {
 }
 
 function generateReadme(package) {
-  if (!package.example)
-    return `
-# ${package.name}
-
-> ${package.description}
-
-## Installation
-
-### Directly in the browser
-
-Drop the library in with a \`<script>\` tag alongside Vue:
-
-\`\`\`html
-<div id="app">
-<!-- ... use components here ... -->
-</div>
-
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/${package.name}"></script>
-<script>
-new Vue({ el: '#app' })
-</script>
-\`\`\`
-
-Or, if you only want to use a small subset of components, drop them in individually:
-
-\`\`\`html
-<div id="app">
-<!-- ... use component here ... -->
-</div>
-
-<script src="https://unpkg.com/vue"></script>
-<script src="https://unpkg.com/${package.name}/HelloA"></script>
-<script>
-new Vue({ el: '#app' })
-</script>
-\`\`\`
-
-### In a module system
-
-Install the library with NPM:
-
-\`\`\`bash
-npm install ${package.name}
-\`\`\`
-
-Then either import the library and either globally register all components with:
-
-\`\`\`js
-import ${package.moduleName} from '${package.name}'
-
-Vue.use(${package.moduleName})
-\`\`\`
-
-or import and locally register a single component with:
-
-\`\`\`js
-import { HelloA } from '${package.name}'
-
-export default {
-components: { ${package.moduleName} }
-}
-\`\`\`
-
-#### Individually packaged components
-
-If you only want to use a small subset of components, import only individually packaged components to reduce the size of your application:
-
-\`\`\`js
-import HelloA from 'hello-vue-components/HelloA'
-import HelloB from 'hello-vue-components/HelloB'
-\`\`\`
-`
+  const docsLink = `https://www.vuecomponentlibrary.com/components/${changeCase.snake(package.moduleName).replace(/_/g, '-')}.html`;
 
   return `\
-# ${package.name}
+# [${package.name}](${docsLink})
 
-> ${package.description}
+Go to the [official documentation page](${docsLink}) for more instructions and usage guidelines.
 
 ## Installation
 
