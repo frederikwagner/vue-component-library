@@ -1,6 +1,6 @@
-# vue-component-library.base-input
+# [vue-component-library.base-input](https://www.vuecomponentlibrary.com/components/base-input.html)
 
-> A component that...
+Go to the [official documentation page](https://www.vuecomponentlibrary.com/components/base-input.html) for more instructions and usage guidelines.
 
 ## Installation
 
@@ -52,5 +52,5 @@ components: { BaseInput }
 
 ```html
 <!-- No props or content are necessary. -->
-<BaseInput></BaseInput>
+<base-input></base-input>
 ```

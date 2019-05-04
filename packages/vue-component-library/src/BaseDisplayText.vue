@@ -1,16 +1,16 @@
 <template>
-  <div class="base-input" />
+  <div class="base-display-text" />
 </template>
 
 <script>
 export default {
-  name: "BaseInput",
+  name: "BaseDisplayText",
 }
 </script>
 
 <style lang="scss" scoped>
 
-$c: ".base-input";
+$c: ".base-display-text";
 
 // #{$c} {}
 </style>
@@ -23,5 +23,5 @@ $c: ".base-input";
 
 <example>
   <!-- No props or content are necessary. -->
-  <base-input></base-input>
+  <base-display-text></base-display-text>
 </example>

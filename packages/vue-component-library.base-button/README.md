@@ -1,6 +1,6 @@
-# vue-component-library.base-button
+# [vue-component-library.base-button](https://www.vuecomponentlibrary.com/components/base-button.html)
 
-> A component that...
+Go to the [official documentation page](https://www.vuecomponentlibrary.com/components/base-button.html) for more instructions and usage guidelines.
 
 ## Installation
 
