@@ -51,6 +51,5 @@ components: { BaseDisplayText }
 ## Usage
 
 ```html
-<!-- No props or content are necessary. -->
-<base-display-text></base-display-text>
+undefined
 ```

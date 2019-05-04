@@ -1,7 +1,7 @@
 {
   "name": "vue-component-library.base-input",
   "version": "0.0.1",
-  "description": "A component that...",
+  "description": "A component library for Vue.js.",
   "author": {
     "name": "Frederik Wagner",
     "email": "fwexeter@gmail.com",

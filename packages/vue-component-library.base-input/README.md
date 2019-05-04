@@ -51,6 +51,5 @@ components: { BaseInput }
 ## Usage
 
 ```html
-<!-- No props or content are necessary. -->
-<base-input></base-input>
+undefined
 ```

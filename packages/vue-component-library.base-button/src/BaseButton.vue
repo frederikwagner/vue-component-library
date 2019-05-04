@@ -19,13 +19,3 @@ $c: ".base-button";
   border-radius: 4px;
 }
 </style>
-
-<meta>
-{
-  "description": "A component that..."
-}
-</meta>
-
-<example>
-  <base-button></base-button>
-</example>

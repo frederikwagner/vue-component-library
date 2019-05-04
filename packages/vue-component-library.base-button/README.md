@@ -51,5 +51,5 @@ components: { BaseButton }
 ## Usage
 
 ```html
-<base-button></base-button>
+undefined
 ```
