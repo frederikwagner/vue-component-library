@@ -5,14 +5,16 @@
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
 import BaseButton from './BaseButton.vue'
+import BaseDisplayText from './BaseDisplayText.vue'
 import BaseInput from './BaseInput.vue'
 
 // Export components individually
-export { BaseButton, BaseInput }
+export { BaseButton, BaseDisplayText, BaseInput }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
   Vue.component('BaseButton', BaseButton)
+  Vue.component('BaseDisplayText', BaseDisplayText)
   Vue.component('BaseInput', BaseInput)
 }
 
