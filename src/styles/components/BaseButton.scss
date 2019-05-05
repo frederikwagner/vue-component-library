@@ -1,13 +1,16 @@
-@import "../foundation/colors.scss";
+@import "../foundation/colors";
+@import "../shared/typography";
 
 .base-button {
   height: 40px;
   padding-right: 12px;
   padding-left: 12px;
   font-size: 16px;
-  font-weight: 500;
+  @include text-emphasis-strong();
+  @include text-emphasis-subdued();
+  background-color: transparent;
   box-sizing: border-box;
-  border-width: 2px;
-  border-color: $color-ink-900;
+  border-width: 1px;
+  border-color: color("grey");
   border-radius: 2px;
 }

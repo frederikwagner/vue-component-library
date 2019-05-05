@@ -1,3 +1,15 @@
+@import "../foundation/typography";
+@import "../foundation/colors";
+
+@mixin text-style-body {
+  font-size: font-size(body);
+  font-weight: 400;
+  line-height: line-height(body);
+
+  text-transform: initial;
+  letter-spacing: initial;
+}
+
 @mixin text-emphasis-placeholder() {
   color: color('ink', 'lightest');
 }
@@ -7,11 +19,11 @@
 }
 
 @mixin text-emphasis-strong {
-  font-weight: 600;
+  font-weight: $font-weight-bold;
 }
 
 @mixin text-emphasis-normal($for-background: null) {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
   color: color(ink, $for-background: $for-background);
 }
 
