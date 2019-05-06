@@ -1,0 +1,29 @@
+@import "../shared/page.scss";
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+.base-page {
+  @include page-layout;
+
+  // Ensure bottom margins of any children are contained
+  &::after {
+    content: '';
+    display: table;
+  }
+}
+
+.base-page--full-width {
+  max-width: none;
+}
+
+.base-page--single-column {
+  max-width: layout-width(primary, max);
+}
+
+.base-page__content {
+  @include page-content-layout;
+}

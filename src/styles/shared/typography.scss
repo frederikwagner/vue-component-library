@@ -1,11 +1,29 @@
 @import "../foundation/typography";
 @import "../foundation/colors";
 
+@mixin text-style-caption {
+  font-size: font-size(caption);
+  font-weight: 400;
+  line-height: line-height(caption);
+}
+
+@mixin text-style-heading {
+  font-size: font-size(heading);
+  font-weight: 600;
+  line-height: line-height(heading);
+}
+
+@mixin text-style-subheading {
+  font-size: font-size(subheading);
+  font-weight: 600;
+  line-height: line-height(subheading);
+  text-transform: uppercase;
+}
+
 @mixin text-style-body {
   font-size: font-size(body);
   font-weight: 400;
   line-height: line-height(body);
-
   text-transform: initial;
   letter-spacing: initial;
 }

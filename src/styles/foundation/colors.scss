@@ -1,5 +1,7 @@
 @import "../theme/colors";
 
+$color-data: $color-map;
+
 /// Returns the color value for a given color name and group.
 ///
 /// @param {String} $hue - The color’s hue.
@@ -9,11 +11,11 @@
 /// @return {Color} The color value.
 
 @function color($hue, $value: base, $for-background: null) {
-  $fetched-color: map-get(map-get($color-map, $hue), $value);
+  $fetched-color: map-get(map-get($color-data, $hue), $value);
 
-  @if map-has-key($color-map, $fetched-color) {
+  @if map-has-key($color-data, $fetched-color) {
     $fetched-color: map-get(
-      map-get($color-map, $fetched-color),
+      map-get($color-data, $fetched-color),
       $value
     );
   }

@@ -5,17 +5,43 @@
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
 import BaseButton from './BaseButton.vue'
+import BaseCard from './BaseCard.vue'
+import BaseCardFooter from './BaseCardFooter.vue'
+import BaseCardHeader from './BaseCardHeader.vue'
+import BaseCardSection from './BaseCardSection.vue'
 import BaseDisplayText from './BaseDisplayText.vue'
+import BaseFrame from './BaseFrame.vue'
+import BaseHeading from './BaseHeading.vue'
 import BaseInput from './BaseInput.vue'
+import BaseLayout from './BaseLayout.vue'
+import BaseLayoutAnnotatedSection from './BaseLayoutAnnotatedSection.vue'
+import BaseLayoutSection from './BaseLayoutSection.vue'
+import BasePage from './BasePage.vue'
+import BaseSubheading from './BaseSubheading.vue'
+import BaseTextContainer from './BaseTextContainer.vue'
+import BaseTopBar from './BaseTopBar.vue'
 
 // Export components individually
-export { BaseButton, BaseDisplayText, BaseInput }
+export { BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BaseSubheading, BaseTextContainer, BaseTopBar }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
   Vue.component('BaseButton', BaseButton)
+  Vue.component('BaseCard', BaseCard)
+  Vue.component('BaseCardFooter', BaseCardFooter)
+  Vue.component('BaseCardHeader', BaseCardHeader)
+  Vue.component('BaseCardSection', BaseCardSection)
   Vue.component('BaseDisplayText', BaseDisplayText)
+  Vue.component('BaseFrame', BaseFrame)
+  Vue.component('BaseHeading', BaseHeading)
   Vue.component('BaseInput', BaseInput)
+  Vue.component('BaseLayout', BaseLayout)
+  Vue.component('BaseLayoutAnnotatedSection', BaseLayoutAnnotatedSection)
+  Vue.component('BaseLayoutSection', BaseLayoutSection)
+  Vue.component('BasePage', BasePage)
+  Vue.component('BaseSubheading', BaseSubheading)
+  Vue.component('BaseTextContainer', BaseTextContainer)
+  Vue.component('BaseTopBar', BaseTopBar)
 }
 
 // Export the library as a plugin
