@@ -64,7 +64,15 @@
                 <base-card>
                   <base-card-section>
                     <base-text-container>
-                      <base-subheading>Comments</base-subheading>
+                      <base-stack distribution="equal-spacing">
+                        <base-stack-item>
+                          <base-subheading>Comments</base-subheading>
+                        </base-stack-item>
+
+                        <base-stack-item>
+                          <a>Link</a>
+                        </base-stack-item>
+                      </base-stack>
 
                       <base-text-style variation="subdued">
                         Lorem Ipsum is simply dummy text of the printing and
