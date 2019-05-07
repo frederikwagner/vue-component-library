@@ -2,6 +2,7 @@
   <div
     v-bind="$attrs"
     class="base-card__section"
+    :class="cardSectionClasses"
     v-on="$listeners"
   >
     <div
@@ -32,6 +33,20 @@ export default {
     title: {
       type: String,
       default: "",
+    },
+    variation: {
+      type: String,
+      default: "",
+      validator: function(value) {
+        return ["", "subdued"].includes(value);
+      }
+    }
+  },
+  computed: {
+    cardSectionClasses() {
+      return {
+        "base-card__section--subdued": this.variation === "subdued",
+      }
     }
   }
 }
