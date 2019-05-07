@@ -1,8 +1,6 @@
 <template>
   <div class="base-page">
-    <div class="base-page__content">
-      <slot name="content" />
-    </div>
+    <slot />
   </div>
 </template>
 
@@ -12,6 +10,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import "./styles/components/BasePage.scss";
 </style>

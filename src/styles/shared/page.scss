@@ -1,3 +1,4 @@
+@import "../foundation/borders";
 @import "../foundation/spacing";
 @import "../shared/breakpoints";
 
@@ -20,6 +21,20 @@
 
   @include page-content-when-not-partially-condensed {
     @include page-padding-not-partially-condensed;
+  }
+}
+
+@mixin page-header-layout {
+  padding: spacing(loose) spacing(loose) 0;
+  border-bottom: border("dark");
+
+  @include page-content-when-not-fully-condensed {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include page-content-when-not-partially-condensed {
+    padding-top: spacing(extra-loose);
   }
 }
 

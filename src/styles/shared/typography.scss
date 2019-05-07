@@ -7,6 +7,31 @@
   line-height: line-height(caption);
 }
 
+
+@mixin text-style-display-x-large {
+  font-size: font-size(display-x-large);
+  font-weight: 400;
+  line-height: line-height(display-x-large);
+}
+
+@mixin text-style-display-large {
+  font-size: font-size(display-large);
+  font-weight: 400;
+  line-height: line-height(display-large);
+}
+
+@mixin text-style-display-medium {
+  font-size: font-size(display-medium);
+  font-weight: 400;
+  line-height: line-height(display-medium);
+}
+
+@mixin text-style-display-small {
+  font-size: font-size(display-small);
+  font-weight: 400;
+  line-height: line-height(display-small);
+}
+
 @mixin text-style-heading {
   font-size: font-size(heading);
   font-weight: 600;

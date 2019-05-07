@@ -4,6 +4,7 @@
 //
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
+import BaseBreadcrumb from './BaseBreadcrumb.vue'
 import BaseButton from './BaseButton.vue'
 import BaseCard from './BaseCard.vue'
 import BaseCardFooter from './BaseCardFooter.vue'
@@ -17,15 +18,19 @@ import BaseLayout from './BaseLayout.vue'
 import BaseLayoutAnnotatedSection from './BaseLayoutAnnotatedSection.vue'
 import BaseLayoutSection from './BaseLayoutSection.vue'
 import BasePage from './BasePage.vue'
+import BasePageContent from './BasePageContent.vue'
+import BasePageHeader from './BasePageHeader.vue'
 import BaseSubheading from './BaseSubheading.vue'
 import BaseTextContainer from './BaseTextContainer.vue'
+import BaseTextStyle from './BaseTextStyle.vue'
 import BaseTopBar from './BaseTopBar.vue'
 
 // Export components individually
-export { BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BaseSubheading, BaseTextContainer, BaseTopBar }
+export { BaseBreadcrumb, BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BasePageContent, BasePageHeader, BaseSubheading, BaseTextContainer, BaseTextStyle, BaseTopBar }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
+  Vue.component('BaseBreadcrumb', BaseBreadcrumb)
   Vue.component('BaseButton', BaseButton)
   Vue.component('BaseCard', BaseCard)
   Vue.component('BaseCardFooter', BaseCardFooter)
@@ -39,8 +44,11 @@ function install(Vue) {
   Vue.component('BaseLayoutAnnotatedSection', BaseLayoutAnnotatedSection)
   Vue.component('BaseLayoutSection', BaseLayoutSection)
   Vue.component('BasePage', BasePage)
+  Vue.component('BasePageContent', BasePageContent)
+  Vue.component('BasePageHeader', BasePageHeader)
   Vue.component('BaseSubheading', BaseSubheading)
   Vue.component('BaseTextContainer', BaseTextContainer)
+  Vue.component('BaseTextStyle', BaseTextStyle)
   Vue.component('BaseTopBar', BaseTopBar)
 }
 
