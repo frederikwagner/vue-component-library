@@ -4,7 +4,13 @@
     :class="frameClasses"
   >
     <div class="base-frame__top-bar">
-      <slot name="top-bar" />
+      <div class="base-frame__top-bar-left">
+        <slot name="top-bar-left" />
+      </div>
+
+      <div class="base-frame__top-bar-right">
+        <slot name="top-bar-right" />
+      </div>
     </div>
 
     <aside class="base-frame__drawer">

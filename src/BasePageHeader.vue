@@ -1,25 +1,43 @@
 <template>
   <div class="base-page__header">
     <base-breadcrumb breadcrumbs="breadcrumbs" />
-    <base-display-text
+
+    <base-stack
       class="base-page__header-title"
-      element="h1"
-      size="large"
+      distribution="equal-spacing"
+      alignment="center"
     >
-      <slot name="title" />{{ title }}
-    </base-display-text>
+      <base-stack-item>
+        <base-display-text
+          element="h1"
+          size="large"
+        >
+          <slot name="title">
+            {{ title }}
+          </slot>
+        </base-display-text>
+      </base-stack-item>
+
+      <base-stack-item>
+        <slot name="actions" />
+      </base-stack-item>
+    </base-stack>
   </div>
 </template>
 
 <script>
 import BaseBreadcrumb from "./BaseBreadcrumb";
 import BaseDisplayText from "./BaseDisplayText";
+import BaseStack from "./BaseStack";
+import BaseStackItem from "./BaseStackItem";
 
 export default {
   name: "BasePageHeader",
   components: {
     "base-breadcrumb": BaseBreadcrumb,
     "base-display-text": BaseDisplayText,
+    "base-stack": BaseStack,
+    "base-stack-item": BaseStackItem,
   },
   props: {
     breadcrumbs: {

@@ -14,10 +14,25 @@ $top-bar-height: 56px;
   top: 0;
   left: 0;
   z-index: 2;
+  display: flex;
   height: $top-bar-height;
   width: 100%;
   background-color: color("white");
   box-shadow: shadow();
+}
+
+.base-frame__top-bar-left {
+  display: none;
+  height: 100%;
+  width: $navigation-width;
+
+  @include frame-when-nav-displayed {
+    display: block;
+  }
+}
+
+.base-frame__top-bar-right {
+  flex: 1 0 auto;
 }
 
 .base-frame__drawer {
