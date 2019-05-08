@@ -53,6 +53,15 @@
   letter-spacing: initial;
 }
 
+@mixin text-style-button {
+  font-size: font-size(button);
+  font-weight: 400;
+  font-family: font-family();
+  line-height: line-height(button);
+  text-transform: initial;
+  letter-spacing: initial;
+}
+
 @mixin text-emphasis-placeholder() {
   color: color('ink', 'lightest');
 }

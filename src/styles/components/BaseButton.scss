@@ -1,16 +1,138 @@
+@import "../foundation/borders";
 @import "../foundation/colors";
+@import "../foundation/shadows";
+@import "../foundation/spacing";
 @import "../shared/typography";
 
+$size-small: 24px;
+$size-medium: 36px;
+$size-large: 48px;
+
 .base-button {
-  height: 40px;
-  padding-right: 12px;
-  padding-left: 12px;
-  font-size: 16px;
+  height: $size-medium;
+  padding-right: spacing("base-tight");
+  padding-left: spacing("base-tight");
+  @include text-style-button();
   @include text-emphasis-strong();
   @include text-emphasis-subdued();
   background-color: transparent;
+  outline: none;
   box-sizing: border-box;
-  border-width: 1px;
-  border-color: color("grey");
-  border-radius: 2px;
+  box-shadow: none;
+  border: none;
+  border-radius: border-radius();
+  cursor: pointer;
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+
+  // &:hover {
+  //   box-shadow: shadow();
+  // }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}
+
+.base-button--type-basic {
+  background-color: color("ink-alpha", "lightest");
+
+  &:hover {
+    background-color: color("ink-alpha", "lighter");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("blue", "light");
+  }
+}
+
+.base-button--type-primary {
+  color: color("white");
+  background-color: color("blue", "dark");
+
+  &:hover {
+    background-color: color("blue", "darker");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("blue", "light");
+  }
+}
+
+.base-button--type-success {
+  color: color("white");
+  background-color: color("green");
+
+  &:hover {
+    background-color: color("green", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("green", "light");
+  }
+}
+
+.base-button--type-warning {
+  color: color("ink");
+  background-color: color("yellow");
+
+  &:hover {
+    background-color: color("yellow", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("yellow", "light");
+  }
+}
+
+.base-button--type-danger {
+  color: color("white");
+  background-color: color("red");
+
+  &:hover {
+    background-color: color("red", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("red", "light");
+  }
+}
+
+.base-button--type-help {
+  color: color("white");
+  background-color: color("purple");
+
+  &:hover {
+    background-color: color("purple", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("purple", "light");
+  }
+}
+
+.base-button--size-small {
+  height: 24px;
+  padding-right: spacing("tight");
+  padding-left: spacing("tight");
+}
+
+.base-button--shape-square,
+.base-button--shape-circle {
+  text-align: center;
+  padding: 0;
+
+  &.base-button--size-medium {
+    height: $size-medium !important;
+    width: $size-medium !important;
+    max-height: $size-medium !important;
+    max-width: $size-medium !important;
+  }
 }
