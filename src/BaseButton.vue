@@ -25,6 +25,7 @@ export default {
       default: "medium",
       validator: function(value) {
         return [
+          "extra-small",
           "small",
           "medium",
           "large",
@@ -104,6 +105,7 @@ export default {
         "base-button--type-warning": this.type === "warning",
         "base-button--type-danger": this.type === "danger",
         "base-button--type-help": this.type === "help",
+        "base-button--size-extra-small": this.size === "extra-small",
         "base-button--size-small": this.size === "small",
         "base-button--size-medium": this.size === "medium",
         "base-button--size-large": this.size === "large",

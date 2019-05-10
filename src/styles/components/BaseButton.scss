@@ -4,12 +4,13 @@
 @import "../foundation/spacing";
 @import "../shared/typography";
 
-$size-small: 24px;
-$size-medium: 36px;
-$size-large: 48px;
+$button-size-extra-small: 24px;
+$button-size-small: 30px;
+$button-size-medium: 36px;
+$button-size-large: 48px;
 
 .base-button {
-  height: $size-medium;
+  height: $button-size-medium;
   padding-right: spacing("base-tight");
   padding-left: spacing("base-tight");
   @include text-style-button();
@@ -118,8 +119,14 @@ $size-large: 48px;
   }
 }
 
+.base-button--size-extra-small {
+  height: $button-size-extra-small;
+  padding-right: spacing("tight");
+  padding-left: spacing("tight");
+}
+
 .base-button--size-small {
-  height: 24px;
+  height: $button-size-small;
   padding-right: spacing("tight");
   padding-left: spacing("tight");
 }
@@ -130,9 +137,9 @@ $size-large: 48px;
   padding: 0;
 
   &.base-button--size-medium {
-    height: $size-medium !important;
-    width: $size-medium !important;
-    max-height: $size-medium !important;
-    max-width: $size-medium !important;
+    height: $button-size-medium !important;
+    width: $button-size-medium !important;
+    max-height: $button-size-medium !important;
+    max-width: $button-size-medium !important;
   }
 }
