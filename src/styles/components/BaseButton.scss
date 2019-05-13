@@ -160,3 +160,7 @@ $button-size-large: 48px;
     max-width: $button-size-large !important;
   }
 }
+
+.base-button--shape-circle {
+  border-radius: 50%;
+}

@@ -57,10 +57,10 @@ export default {
     },
     variation: {
       type: String,
-      default: "basic",
+      default: "plain",
       validator: function(value) {
         return [
-          "basic",
+          "plain",
           "subtle",
           "inverted",
         ].includes(value);
