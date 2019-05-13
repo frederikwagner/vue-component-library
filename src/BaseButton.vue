@@ -6,9 +6,7 @@
     class="base-button"
     v-on="$listeners"
   >
-    <span class="button__content">
-      <slot />
-    </span>
+    <slot />
   </button>
 </template>
 
@@ -62,8 +60,8 @@ export default {
       default: "basic",
       validator: function(value) {
         return [
+          "basic",
           "subtle",
-          "flat",
           "inverted",
         ].includes(value);
       }
