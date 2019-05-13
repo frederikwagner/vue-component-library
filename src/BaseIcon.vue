@@ -20,7 +20,23 @@ export default {
       type: String,
       default: "medium",
       validator: function(value) {
-        return ["small", "medium", "large"].includes(value)
+        return [
+          "small",
+          "medium",
+          "large"
+        ].includes(value)
+      }
+    },
+    variation: {
+      type: String,
+      default: "rounded",
+      validator: function(value) {
+        return [
+          "filled",
+          "outlined",
+          "rounded",
+          "sharp"
+        ].includes(value);
       }
     }
   },
@@ -29,7 +45,10 @@ export default {
       return {
         "base-icon--size-small": this.size === "small",
         "base-icon--size-medium": this.size === "medium",
-        "base-icon--size-large": this.size === "large"
+        "base-icon--size-large": this.size === "large",
+        "base-icon--variation-outlined": this.variation === "outlined",
+        "base-icon--variation-rounded": this.variation === "rounded",
+        "base-icon--variation-sharp": this.variation === "sharp",
       }
     }
   }
