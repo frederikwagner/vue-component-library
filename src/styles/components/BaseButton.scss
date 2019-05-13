@@ -10,6 +10,10 @@ $button-size-medium: 36px;
 $button-size-large: 48px;
 
 .base-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   height: $button-size-medium;
   padding-right: spacing("base-tight");
   padding-left: spacing("base-tight");
@@ -133,13 +137,26 @@ $button-size-large: 48px;
 
 .base-button--shape-square,
 .base-button--shape-circle {
-  text-align: center;
   padding: 0;
+
+  &.base-button--size-small {
+    height: $button-size-small !important;
+    width: $button-size-small !important;
+    max-height: $button-size-small !important;
+    max-width: $button-size-small !important;
+  }
 
   &.base-button--size-medium {
     height: $button-size-medium !important;
     width: $button-size-medium !important;
     max-height: $button-size-medium !important;
     max-width: $button-size-medium !important;
+  }
+
+  &.base-button--size-large {
+    height: $button-size-large !important;
+    width: $button-size-large !important;
+    max-height: $button-size-large !important;
+    max-width: $button-size-large !important;
   }
 }

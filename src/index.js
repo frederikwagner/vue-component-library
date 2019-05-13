@@ -13,6 +13,7 @@ import BaseCardSection from './BaseCardSection.vue'
 import BaseDisplayText from './BaseDisplayText.vue'
 import BaseFrame from './BaseFrame.vue'
 import BaseHeading from './BaseHeading.vue'
+import BaseIcon from './BaseIcon.vue'
 import BaseInput from './BaseInput.vue'
 import BaseLayout from './BaseLayout.vue'
 import BaseLayoutAnnotatedSection from './BaseLayoutAnnotatedSection.vue'
@@ -28,7 +29,7 @@ import BaseTextStyle from './BaseTextStyle.vue'
 import BaseTopBar from './BaseTopBar.vue'
 
 // Export components individually
-export { BaseBreadcrumb, BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BasePageContent, BasePageHeader, BaseStack, BaseStackItem, BaseSubheading, BaseTextContainer, BaseTextStyle, BaseTopBar }
+export { BaseBreadcrumb, BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseIcon, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BasePageContent, BasePageHeader, BaseStack, BaseStackItem, BaseSubheading, BaseTextContainer, BaseTextStyle, BaseTopBar }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
@@ -41,6 +42,7 @@ function install(Vue) {
   Vue.component('BaseDisplayText', BaseDisplayText)
   Vue.component('BaseFrame', BaseFrame)
   Vue.component('BaseHeading', BaseHeading)
+  Vue.component('BaseIcon', BaseIcon)
   Vue.component('BaseInput', BaseInput)
   Vue.component('BaseLayout', BaseLayout)
   Vue.component('BaseLayoutAnnotatedSection', BaseLayoutAnnotatedSection)

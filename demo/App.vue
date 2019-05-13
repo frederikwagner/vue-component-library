@@ -7,8 +7,14 @@
             <template slot="actions">
               <base-stack spacing="tight">
                 <base-stack-item>
-                  <base-button type="basic">
-                    Basic
+                  <base-button
+                    type="basic"
+                    shape="square"
+                  >
+                    <base-icon
+                      icon="edit"
+                      size="small"
+                    />
                   </base-button>
                 </base-stack-item>
 
@@ -103,3 +109,9 @@
     </base-frame>
   </div>
 </template>
+
+<style lang="scss">
+// Import fonts via google for charts to use fonts
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+</style>
