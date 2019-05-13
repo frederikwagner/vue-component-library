@@ -8,7 +8,10 @@
 
 import Vue from 'vue'
 import App from './App'
+import VClickOutside from "v-click-outside";
 import "../src/styles/styles.scss";
+
+Vue.use(VClickOutside);
 
 if (process.env.VUE_APP_E2E) {
   if (window.__e2e_lib) {

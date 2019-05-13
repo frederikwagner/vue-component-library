@@ -16,7 +16,9 @@
   "gitHooks": {
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
   },
-  "dependencies": {},
+  "dependencies": {
+    "v-click-outside": "^2.1.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@vue/cli-plugin-babel": "^3.1.0",

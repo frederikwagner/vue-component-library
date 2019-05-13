@@ -7,15 +7,23 @@
             <template slot="actions">
               <base-stack spacing="tight">
                 <base-stack-item>
-                  <base-button
-                    type="basic"
-                    shape="square"
-                  >
-                    <base-icon
-                      icon="edit"
-                      size="small"
-                    />
-                  </base-button>
+                  <base-popover padding="base">
+                    <template #trigger="{togglePopover}">
+                      <base-button
+                        type="basic"
+                        shape="circle"
+                        @click="togglePopover"
+                      >
+                        <base-icon icon="arrow_downward" />
+                      </base-button>
+                    </template>
+
+                    <template #popover>
+                      <div style="width: 320px">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                      </div>
+                    </template>
+                  </base-popover>
                 </base-stack-item>
 
                 <base-stack-item>
@@ -113,5 +121,5 @@
 <style lang="scss">
 // Import fonts via google for charts to use fonts
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
 </style>
