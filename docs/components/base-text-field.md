@@ -1,11 +1,11 @@
-# BaseInput
+# BaseTextField
 
 A component that...
 
 ## Example
 
 ```html
-<base-input></base-input>
+<base-text-field></base-text-field>
 ```
 
 ## Props
@@ -15,7 +15,7 @@ Prop | Type | Default | Description
 
 ## Best practices
 
-A BaseInput should ...
+A BaseTextField should ...
 
 ## Related components
 
