@@ -1,0 +1,26 @@
+{
+  "name": "vue-component-library.base-spinner",
+  "version": "0.0.1",
+  "description": "A component library for Vue.js.",
+  "author": {
+    "name": "Frederik Wagner",
+    "email": "fwexeter@gmail.com",
+    "github": "frederikwagner"
+  },
+  "license": "MIT",
+  "homepage": "https://www.npmjs.com/package/vue-component-library.base-spinner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frederikwagner/vue-component-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frederikwagner/vue-component-library/issues"
+  },
+  "module": "index.js",
+  "main": "cjs/index.js",
+  "unpkg": "umd/index.min.js",
+  "jsdelivr": "umd/index.min.js",
+  "peerDependencies": {
+    "vue": ">=2.6.0"
+  }
+}

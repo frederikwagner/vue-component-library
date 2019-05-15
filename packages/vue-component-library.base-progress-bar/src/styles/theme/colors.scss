@@ -1,0 +1,321 @@
+// -----
+// Black
+// -----
+$color-black: #000;
+
+// ----
+// Inks
+// ----
+$color-ink-900: #0a1f44; // TB
+$color-ink-800: #182c4f;
+$color-ink-700: #273a5b;
+$color-ink-600: #364866;
+$color-ink-500: #445571;
+$color-ink-400: #53627c; // T
+$color-ink-300: #5d6c84;
+$color-ink-200: #6c798f;
+$color-ink-100: #758196;
+
+$color-ink: $color-ink-900;
+$color-ink-light: $color-ink-600;
+$color-ink-lighter: $color-ink-300;
+$color-ink-lightest: $color-ink-100;
+
+$color-ink-A900: rgba($color-ink-900, 0.9);
+$color-ink-A800: rgba($color-ink-900, 0.8);
+$color-ink-A700: rgba($color-ink-900, 0.7);
+$color-ink-A600: rgba($color-ink-900, 0.6);
+$color-ink-A500: rgba($color-ink-900, 0.5);
+$color-ink-A400: rgba($color-ink-900, 0.4);
+$color-ink-A300: rgba($color-ink-900, 0.3);
+$color-ink-A200: rgba($color-ink-900, 0.2);
+$color-ink-A100: rgba($color-ink-900, 0.1);
+$color-ink-A80: rgba($color-ink-900, 0.08);
+$color-ink-A40: rgba($color-ink-900, 0.04);
+
+$color-ink-alpha: $color-ink-A200;
+$color-ink-alpha-light: $color-ink-A100;
+$color-ink-alpha-lighter: $color-ink-A80;
+$color-ink-alpha-lightest: $color-ink-A40;
+
+// -----
+// Greys
+// -----
+$color-grey-900: #8a94a6; // T
+$color-grey-800: #98a1b1;
+$color-grey-700: #a6aebc; // T
+$color-grey-600: #b5bbc6;
+$color-grey-500: #c9ced6; // B
+$color-grey-400: #e1e4e8;
+$color-grey-300: #f1f2f4;
+$color-grey-200: #f8f9fb;
+$color-grey-100: #fcfcfd;
+
+$color-grey-darker: $color-grey-700;
+$color-grey-dark: $color-grey-500;
+$color-grey: $color-grey-400;
+$color-grey-light: $color-grey-300;
+$color-grey-lighter: $color-grey-200;
+$color-grey-lightest: $color-grey-100;
+
+// ------
+// Whites
+// ------
+$color-white: #fff;
+
+$color-white-A900: rgba($color-white, 0.9);
+$color-white-A800: rgba($color-white, 0.8);
+$color-white-A700: rgba($color-white, 0.7);
+$color-white-A600: rgba($color-white, 0.6);
+$color-white-A500: rgba($color-white, 0.5);
+$color-white-A400: rgba($color-white, 0.4);
+$color-white-A300: rgba($color-white, 0.3);
+$color-white-A200: rgba($color-white, 0.2);
+$color-white-A100: rgba($color-white, 0.1);
+$color-white-A80: rgba($color-white, 0.08);
+$color-white-A40: rgba($color-white, 0.04);
+
+$color-white-alpha: $color-white-A900;
+$color-white-alpha-light: $color-white-A700;
+$color-white-alpha-lighter: $color-white-A500;
+$color-white-alpha-lightest: $color-white-A200;
+
+// -----
+// Blues
+// -----
+$color-blue-900: #0a44a5;
+$color-blue-800: #0d55cf; // T
+$color-blue-700: #0c66ff; // B
+$color-blue-600: #007fff; // T
+$color-blue-500: #5aacff; // T
+$color-blue-400: #99ccff;
+$color-blue-300: #cce6ff;
+$color-blue-200: #ebf5ff;
+$color-blue-100: #f5faff;
+
+$color-blue-text: $color-blue-900;
+$color-blue-darker: $color-blue-900;
+$color-blue-dark: $color-blue-800;
+$color-blue: $color-blue-700;
+$color-blue-light: $color-blue-400;
+$color-blue-lighter: $color-blue-100;
+
+// ------
+// Greens
+// ------
+$color-green-900: #006242;
+$color-green-800: #00865a; // T
+$color-green-700: #0bb07b; // TB
+$color-green-600: #22c993;
+$color-green-500: #3ed3a3; // T
+$color-green-400: #6ddfba;
+$color-green-300: #92eccf;
+$color-green-200: #cff8eb;
+$color-green-100: #eafcf7;
+
+$color-green-text: $color-green-900;
+$color-green-darker: $color-green-900;
+$color-green-dark: $color-green-800;
+$color-green: $color-green-700;
+$color-green-light: $color-green-300;
+$color-green-lighter: $color-green-100;
+
+// -------
+// Yellows
+// -------
+$color-yellow-900: #f07300; // T
+$color-yellow-800: #ff8f00;
+$color-yellow-700: #ffad0d; // T
+$color-yellow-600: #ffbb38; // B
+$color-yellow-500: #ffca65;
+$color-yellow-400: #ffdc99;
+$color-yellow-300: #ffecc7;
+$color-yellow-200: #fff6e4;
+$color-yellow-100: #fffcf5;
+
+$color-yellow-text: $color-yellow-900;
+$color-yellow-darker: $color-yellow-900;
+$color-yellow-dark: $color-yellow-800;
+$color-yellow: $color-yellow-700;
+$color-yellow-light: $color-yellow-400;
+$color-yellow-lighter: $color-yellow-100;
+
+// ----
+// Reds
+// ----
+$color-red-900: #a50000;
+$color-red-800: #bd0303;
+$color-red-700: #dd2727; // T
+$color-red-600: #f03d3d; // TB
+$color-red-500: #ff5d5d;
+$color-red-400: #ff8d8d; // T
+$color-red-300: #ffc2c2;
+$color-red-200: #ffeaea;
+$color-red-100: #fff8f8;
+
+$color-red-text: $color-red-900;
+$color-red-darker: $color-red-900;
+$color-red-dark: $color-red-800;
+$color-red: $color-red-700;
+$color-red-light: $color-red-300;
+$color-red-lighter: $color-red-100;
+
+// -------
+// Purples
+// -------
+$color-purple-900: #362984;
+$color-purple-800: #403294; // T
+$color-purple-700: #5243aa;
+$color-purple-600: #6554c0; // TB
+$color-purple-500: #8777d9;
+$color-purple-400: #998dd9; // T
+$color-purple-300: #c0b6f2;
+$color-purple-200: #eae6ff;
+$color-purple-100: #f3f1fe;
+
+$color-purple-text: $color-purple-900;
+$color-purple-darker: $color-purple-900;
+$color-purple-dark: $color-purple-800;
+$color-purple: $color-purple-700;
+$color-purple-light: $color-purple-300;
+$color-purple-lighter: $color-purple-100;
+
+// -----
+// Teals
+// -----
+$color-teal-900: #037d93;
+$color-teal-800: #008da6; // T
+$color-teal-700: #00a3bf;
+$color-teal-600: #00b8d9; // TB
+$color-teal-500: #00c7e6;
+$color-teal-400: #79e2f2; // T
+$color-teal-300: #b3f5ff;
+$color-teal-200: #e6fcff;
+$color-teal-100: #f5fdfe;
+
+$color-teal-text: $color-teal-900;
+$color-teal-darker: $color-teal-900;
+$color-teal-dark: $color-teal-800;
+$color-teal: $color-teal-700;
+$color-teal-light: $color-teal-300;
+$color-teal-lighter: $color-teal-100;
+
+// ---------
+// Primaries
+// ---------
+$color-primary-text: $color-blue-900;
+$color-primary-darker: $color-blue-900;
+$color-primary-dark: $color-blue-800;
+$color-primary: $color-blue-700;
+$color-primary-light: $color-blue-400;
+$color-primary-lighter: $color-blue-100;
+
+// ---------
+// Secondary
+// ---------
+$color-secondary-text: $color-ink-900;
+$color-secondary-darker: $color-ink-900;
+$color-secondary-dark: $color-ink-800;
+$color-secondary: $color-ink-700;
+$color-secondary-light: $color-ink-300;
+$color-secondary-lighter: $color-ink-100;
+
+// ---------
+// Color map
+// ---------
+$color-map: (
+  'primary': (
+    'darker': $color-primary-darker,
+    'dark': $color-primary-dark,
+    'base': $color-primary,
+    'light': $color-primary-light,
+    'lighter': $color-primary-lighter,
+  ),
+  'secondary': (
+    'darker': $color-secondary-darker,
+    'dark': $color-secondary-dark,
+    'base': $color-secondary,
+    'light': $color-secondary-light,
+    'lighter': $color-secondary-lighter,
+  ),
+  'purple': (
+    'text': $color-purple-text,
+    'darker': $color-purple-darker,
+    'dark': $color-purple-dark,
+    'base': $color-purple,
+    'light': $color-purple-light,
+    'lighter': $color-purple-lighter,
+  ),
+  'blue': (
+    'text': $color-blue-text,
+    'darker': $color-blue-darker,
+    'dark': $color-blue-dark,
+    'base': $color-blue,
+    'light': $color-blue-light,
+    'lighter': $color-blue-lighter,
+  ),
+  'teal': (
+    'text': $color-teal-text,
+    'darker': $color-teal-darker,
+    'dark': $color-teal-dark,
+    'base': $color-teal,
+    'light': $color-teal-light,
+    'lighter': $color-teal-lighter,
+  ),
+  'green': (
+    'text': $color-green-text,
+    'darker': $color-green-darker,
+    'dark': $color-green-dark,
+    'base': $color-green,
+    'light': $color-green-light,
+    'lighter': $color-green-lighter,
+  ),
+  'yellow': (
+    'text': $color-yellow-text,
+    'darker': $color-yellow-darker,
+    'dark': $color-yellow-dark,
+    'base': $color-yellow,
+    'light': $color-yellow-light,
+    'lighter': $color-yellow-lighter,
+  ),
+  'red': (
+    'text': $color-red-text,
+    'darker': $color-red-darker,
+    'dark': $color-red-dark,
+    'base': $color-red,
+    'light': $color-red-light,
+    'lighter': $color-red-lighter,
+  ),
+  'ink': (
+    'base': $color-ink,
+    'light': $color-ink-light,
+    'lighter': $color-ink-lighter,
+    'lightest': $color-ink-lightest,
+  ),
+  'ink-alpha': (
+    'base': $color-ink-alpha,
+    'light': $color-ink-alpha-light,
+    'lighter': $color-ink-alpha-lighter,
+    'lightest': $color-ink-alpha-lightest,
+  ),
+  'grey': (
+    'darker': $color-grey-darker,
+    'dark': $color-grey-dark,
+    'base': $color-grey,
+    'light': $color-grey-light,
+    'lighter': $color-grey-lighter,
+    'lightest': $color-grey-lightest,
+  ),
+  'white-alpha': (
+    'base': $color-white-alpha,
+    'light': $color-white-alpha-light,
+    'lighter': $color-white-alpha-lighter,
+    'lightest': $color-white-alpha-lightest,
+  ),
+  'black': (
+    'base': $color-black,
+  ),
+  'white': (
+    'base': $color-white,
+  ),
+);

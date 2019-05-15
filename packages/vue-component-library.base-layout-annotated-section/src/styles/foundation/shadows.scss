@@ -1,0 +1,43 @@
+@import "../foundation/borders";
+@import "../foundation/colors";
+
+/* Shadows are intentionally very subtle gradiations. */
+$shadows-data: (
+  flat: (
+    0 0 0 1px rgba(color("ink"), 0.1),
+  ),
+  faint: (
+    0 1px 0 0 rgba(color("ink"), 0.04),
+  ),
+  base: (
+    0 0 0 1px rgba(color("ink"), 0.04),
+    0 1px 4px 0 rgba(color("ink"), 0.1),
+  ),
+  base-inset: (
+    0 0 0 1px rgba(color("ink"), 0.04) inset,
+    0 1px 4px 0 rgba(color("ink"), 0.1) inset,
+  ),
+  deep: (
+    0 0 0 1px rgba(color("ink"), 0.08),
+    0 4px 16px rgba(color("ink"), 0.2),
+  ),
+  layer: (
+    0 31px 41px 0 rgba(color("ink"), 0.04),
+    0 2px 16px 0 rgba(color("ink"), 0.16),
+  ),
+  transparent: 0 0 0 0 transparent,
+);
+
+/// Returns the shadow for the specified depth
+/// @param {String} $depth [base] - The shadow’s depth.
+/// @return {List} The shadow value.
+
+@function shadow($depth: base) {
+  $fetched-value: map-get($shadows-data, $depth);
+
+  @if type-of($fetched-value) == list {
+    @return $fetched-value;
+  } @else {
+    @error 'Shadow variant `#{$depth}` not found. Available variants: #{available-names($shadows-data)}';
+  }
+}

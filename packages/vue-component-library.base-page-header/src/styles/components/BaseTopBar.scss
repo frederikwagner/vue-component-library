@@ -1,0 +1,8 @@
+@import "../foundation/colors";
+@import "../shared/typography";
+
+.base-top-bar {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid color("grey");
+}

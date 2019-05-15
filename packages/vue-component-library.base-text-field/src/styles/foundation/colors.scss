@@ -1,0 +1,32 @@
+@import "../theme/colors";
+
+$color-data: $color-map;
+
+/// Returns the color value for a given color name and group.
+///
+/// @param {String} $hue - The color’s hue.
+/// @param {String} $value - The darkness/lightness of the color. Defaults to
+/// base.
+/// @param {Color} $for-background - The background color on which this color will appear.
+/// @return {Color} The color value.
+
+@function color($hue, $value: base, $for-background: null) {
+  $fetched-color: map-get(map-get($color-data, $hue), $value);
+
+  @if map-has-key($color-data, $fetched-color) {
+    $fetched-color: map-get(
+      map-get($color-data, $fetched-color),
+      $value
+    );
+  }
+
+  @if $for-background != null {
+    // TODO
+    // Add contrast checker and return the inverse color if
+    // contrast is not sufficient.
+  }
+
+  @if type-of($fetched-color) == color {
+    @return $fetched-color;
+  }
+}

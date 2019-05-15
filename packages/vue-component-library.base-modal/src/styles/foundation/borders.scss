@@ -1,0 +1,65 @@
+@import "../theme/borders";
+@import "../foundation/colors";
+@import "../foundation/utilities";
+
+// ------------
+// Border width
+// ------------
+$border-width-data: (
+  base: rem(1px),
+  thick: rem(2px),
+  thicker: rem(3px),
+);
+
+/// Returns the width of the specified border type.
+/// @param {String} $variant [base] - The border variant key.
+/// @return {Number} The width for the border.
+
+@function border-width($variant: base) {
+  $fetched-value: map-get($border-width-data, $variant);
+
+  @if type-of($fetched-value) == number {
+    @return $fetched-value;
+  } @else {
+    @error 'Border width variant `#{$variant}` not found. Available variants: #{available-names($border-width-data)}';
+  }
+}
+
+// -------
+// Borders
+// -------
+$borders-data: (
+  base: border-width() solid color('grey', 'light'),
+  dark: border-width() solid color('grey'),
+  transparent: border-width() solid transparent,
+);
+
+/// Returns the default border.
+/// @param {String} $variant [base] - The border variant key.
+/// @return {List} The border value.
+
+@function border($variant: base) {
+  $fetched-value: map-get($borders-data, $variant);
+
+  @if $fetched-value {
+    @return $fetched-value;
+  } @else {
+    @error 'Border variant `#{$variant}` not found. Available variants: #{available-names($borders-data)}';
+  }
+}
+
+// ------------
+// Border radius
+// ------------
+$border-radius-data: (
+  base: 4px,
+  large: 8px,
+);
+
+/// Returns the border radius of the specified size.
+/// @param {String} $size - The border radius’s size.
+/// @return {Number} The border radius value.
+
+@function border-radius($size: base) {
+  @return map-get($border-radius-data, $size);
+}

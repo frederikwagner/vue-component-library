@@ -1,0 +1,92 @@
+@import "../foundation/typography";
+@import "../foundation/colors";
+
+@mixin text-style-caption {
+  font-size: font-size(caption);
+  font-weight: 400;
+  line-height: line-height(caption);
+}
+
+
+@mixin text-style-display-x-large {
+  font-size: font-size(display-x-large);
+  font-weight: 400;
+  line-height: line-height(display-x-large);
+}
+
+@mixin text-style-display-large {
+  font-size: font-size(display-large);
+  font-weight: 400;
+  line-height: line-height(display-large);
+}
+
+@mixin text-style-display-medium {
+  font-size: font-size(display-medium);
+  font-weight: 400;
+  line-height: line-height(display-medium);
+}
+
+@mixin text-style-display-small {
+  font-size: font-size(display-small);
+  font-weight: 400;
+  line-height: line-height(display-small);
+}
+
+@mixin text-style-heading {
+  font-size: font-size(heading);
+  font-weight: 600;
+  line-height: line-height(heading);
+}
+
+@mixin text-style-subheading {
+  font-size: font-size(subheading);
+  font-weight: 600;
+  line-height: line-height(subheading);
+  text-transform: uppercase;
+}
+
+@mixin text-style-body {
+  font-size: font-size(body);
+  font-weight: 400;
+  line-height: line-height(body);
+  text-transform: initial;
+  letter-spacing: initial;
+}
+
+@mixin text-style-button {
+  font-size: font-size(button);
+  font-weight: 400;
+  font-family: font-family();
+  line-height: line-height(button);
+  text-transform: initial;
+  letter-spacing: initial;
+}
+
+@mixin text-emphasis-placeholder() {
+  color: color('ink', 'lightest');
+}
+
+@mixin text-emphasis-subdued($for-background: null) {
+  color: color('ink', 'lighter', $for-background: $for-background);
+}
+
+@mixin text-emphasis-strong {
+  font-weight: $font-weight-bold;
+}
+
+@mixin text-emphasis-normal($for-background: null) {
+  font-weight: $font-weight-normal;
+  color: color(ink, $for-background: $for-background);
+}
+
+@mixin text-breakword {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

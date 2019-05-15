@@ -1,0 +1,6 @@
+@import "../shared/typography";
+
+.base-heading {
+  @include text-style-heading;
+  margin: 0;
+}
