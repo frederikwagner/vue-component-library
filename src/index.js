@@ -4,61 +4,97 @@
 //
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
+import BaseActionList from './BaseActionList.vue'
 import BaseAvatar from './BaseAvatar.vue'
+import BaseAvatarGroup from './BaseAvatarGroup.vue'
+import BaseBadge from './BaseBadge.vue'
+import BaseBlanket from './BaseBlanket.vue'
 import BaseBreadcrumb from './BaseBreadcrumb.vue'
 import BaseButton from './BaseButton.vue'
 import BaseCard from './BaseCard.vue'
 import BaseCardFooter from './BaseCardFooter.vue'
 import BaseCardHeader from './BaseCardHeader.vue'
 import BaseCardSection from './BaseCardSection.vue'
+import BaseCheckbox from './BaseCheckbox.vue'
+import BaseChoiceList from './BaseChoiceList.vue'
+import BaseColorPicker from './BaseColorPicker.vue'
+import BaseDatePicker from './BaseDatePicker.vue'
 import BaseDisplayText from './BaseDisplayText.vue'
+import BaseFileUpload from './BaseFileUpload.vue'
 import BaseFrame from './BaseFrame.vue'
 import BaseHeading from './BaseHeading.vue'
 import BaseIcon from './BaseIcon.vue'
-import BaseInput from './BaseInput.vue'
+import BaseInlineMessage from './BaseInlineMessage.vue'
 import BaseLayout from './BaseLayout.vue'
 import BaseLayoutAnnotatedSection from './BaseLayoutAnnotatedSection.vue'
 import BaseLayoutSection from './BaseLayoutSection.vue'
+import BaseModal from './BaseModal.vue'
+import BaseOptionList from './BaseOptionList.vue'
 import BasePage from './BasePage.vue'
 import BasePageContent from './BasePageContent.vue'
 import BasePageHeader from './BasePageHeader.vue'
 import BasePopover from './BasePopover.vue'
+import BaseProgressBar from './BaseProgressBar.vue'
+import BaseRadioButton from './BaseRadioButton.vue'
+import BaseSelect from './BaseSelect.vue'
+import BaseSpinner from './BaseSpinner.vue'
 import BaseStack from './BaseStack.vue'
 import BaseStackItem from './BaseStackItem.vue'
 import BaseSubheading from './BaseSubheading.vue'
+import BaseTag from './BaseTag.vue'
 import BaseTextContainer from './BaseTextContainer.vue'
+import BaseTextField from './BaseTextField.vue'
 import BaseTextStyle from './BaseTextStyle.vue'
+import BaseToggle from './BaseToggle.vue'
 import BaseTopBar from './BaseTopBar.vue'
 
 // Export components individually
-export { BaseAvatar, BaseBreadcrumb, BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseDisplayText, BaseFrame, BaseHeading, BaseIcon, BaseInput, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BasePage, BasePageContent, BasePageHeader, BasePopover, BaseStack, BaseStackItem, BaseSubheading, BaseTextContainer, BaseTextStyle, BaseTopBar }
+export { BaseActionList, BaseAvatar, BaseAvatarGroup, BaseBadge, BaseBlanket, BaseBreadcrumb, BaseButton, BaseCard, BaseCardFooter, BaseCardHeader, BaseCardSection, BaseCheckbox, BaseChoiceList, BaseColorPicker, BaseDatePicker, BaseDisplayText, BaseFileUpload, BaseFrame, BaseHeading, BaseIcon, BaseInlineMessage, BaseLayout, BaseLayoutAnnotatedSection, BaseLayoutSection, BaseModal, BaseOptionList, BasePage, BasePageContent, BasePageHeader, BasePopover, BaseProgressBar, BaseRadioButton, BaseSelect, BaseSpinner, BaseStack, BaseStackItem, BaseSubheading, BaseTag, BaseTextContainer, BaseTextField, BaseTextStyle, BaseToggle, BaseTopBar }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
+  Vue.component('BaseActionList', BaseActionList)
   Vue.component('BaseAvatar', BaseAvatar)
+  Vue.component('BaseAvatarGroup', BaseAvatarGroup)
+  Vue.component('BaseBadge', BaseBadge)
+  Vue.component('BaseBlanket', BaseBlanket)
   Vue.component('BaseBreadcrumb', BaseBreadcrumb)
   Vue.component('BaseButton', BaseButton)
   Vue.component('BaseCard', BaseCard)
   Vue.component('BaseCardFooter', BaseCardFooter)
   Vue.component('BaseCardHeader', BaseCardHeader)
   Vue.component('BaseCardSection', BaseCardSection)
+  Vue.component('BaseCheckbox', BaseCheckbox)
+  Vue.component('BaseChoiceList', BaseChoiceList)
+  Vue.component('BaseColorPicker', BaseColorPicker)
+  Vue.component('BaseDatePicker', BaseDatePicker)
   Vue.component('BaseDisplayText', BaseDisplayText)
+  Vue.component('BaseFileUpload', BaseFileUpload)
   Vue.component('BaseFrame', BaseFrame)
   Vue.component('BaseHeading', BaseHeading)
   Vue.component('BaseIcon', BaseIcon)
-  Vue.component('BaseInput', BaseInput)
+  Vue.component('BaseInlineMessage', BaseInlineMessage)
   Vue.component('BaseLayout', BaseLayout)
   Vue.component('BaseLayoutAnnotatedSection', BaseLayoutAnnotatedSection)
   Vue.component('BaseLayoutSection', BaseLayoutSection)
+  Vue.component('BaseModal', BaseModal)
+  Vue.component('BaseOptionList', BaseOptionList)
   Vue.component('BasePage', BasePage)
   Vue.component('BasePageContent', BasePageContent)
   Vue.component('BasePageHeader', BasePageHeader)
   Vue.component('BasePopover', BasePopover)
+  Vue.component('BaseProgressBar', BaseProgressBar)
+  Vue.component('BaseRadioButton', BaseRadioButton)
+  Vue.component('BaseSelect', BaseSelect)
+  Vue.component('BaseSpinner', BaseSpinner)
   Vue.component('BaseStack', BaseStack)
   Vue.component('BaseStackItem', BaseStackItem)
   Vue.component('BaseSubheading', BaseSubheading)
+  Vue.component('BaseTag', BaseTag)
   Vue.component('BaseTextContainer', BaseTextContainer)
+  Vue.component('BaseTextField', BaseTextField)
   Vue.component('BaseTextStyle', BaseTextStyle)
+  Vue.component('BaseToggle', BaseToggle)
   Vue.component('BaseTopBar', BaseTopBar)
 }
 
