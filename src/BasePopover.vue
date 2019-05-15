@@ -18,8 +18,8 @@
         <base-card
           v-if="popoverIsVisible"
           :style="{ 'max-height': maxHeight }"
-          :class="popoverContainerClasses"
-          class="base-popover__container"
+          :class="popoverCardClasses"
+          class="base-popover__card"
         >
           <slot
             :closePopover="closePopover"
@@ -121,7 +121,7 @@ export default {
           this.alignment === "left bottom",
       };
     },
-    popoverContainerClasses() {
+    popoverCardClasses() {
       return {
         "base-popover__container--padding-none": this.padding === "none" || !this.padding,
         "base-popover__container--padding-extra-tight": this.padding === "extra-tight",
