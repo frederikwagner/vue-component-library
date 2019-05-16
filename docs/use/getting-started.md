@@ -63,12 +63,3 @@ export default {
   components: { BaseButton, BaseInput }
 }
 ```
-
-#### Individually packaged components
-
-If you only want to use a small subset of components, only import individually packaged components to reduce the size of your application:
-
-```js
-import BaseButton from 'vue-component-library.BaseButton'
-import BaseInput from 'vue-component-library.BaseInput'
-```

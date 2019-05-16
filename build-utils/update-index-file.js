@@ -18,7 +18,10 @@ const indexFileContent = `\
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
 ${componentNames
-  .map(componentName => `import ${componentName} from './${componentName}.vue'`)
+  .map(
+    componentName =>
+      `import ${componentName} from './components/${componentName}/${componentName}.vue'`
+  )
   .join('\n')}
 
 // Export components individually

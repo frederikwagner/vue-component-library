@@ -1,11 +1,13 @@
 # Project structure
 
-- [/_templates](#templates)
+- [/\_templates](#templates)
 - [/.vscode](#vscode)
 - [/build-utils](#build-utils)
 - [/demo](#demo)
 - [/packages](#packages)
 - [/src](#src)
+  - [/components](#components)
+  - [/styles](#styles)
 - [/tests](#tests)
 - [.gitignore](#gitignore)
 - [.hygen.js](#hygen.js)
@@ -21,7 +23,7 @@
 - [vue.congif.js](#vue.congif.js)
 - [yarn.lock](#yarn.lock)
 
-## /_templates
+## /\_templates
 
 Lorem ipsum
 
@@ -46,6 +48,14 @@ Lorem ipsum
 Lorem ipsum
 
 ## /src
+
+Lorem ipsum
+
+### /components
+
+Lorem ipsum
+
+### /styles
 
 Lorem ipsum
 

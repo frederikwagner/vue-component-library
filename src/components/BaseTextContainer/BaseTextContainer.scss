@@ -1,0 +1,20 @@
+@import "../../styles/foundation/spacing";
+
+@mixin text-container-spacing($spacing: base) {
+  // stylelint-disable-next-line selector-max-combinators
+  > * + * {
+    margin-top: (spacing($spacing));
+  }
+}
+
+.base-text-container {
+  @include text-container-spacing;
+}
+
+.base-text-container--spacing-tight {
+  @include text-container-spacing(tight);
+}
+
+.base-text-container--spacing-loose {
+  @include text-container-spacing(loose);
+}

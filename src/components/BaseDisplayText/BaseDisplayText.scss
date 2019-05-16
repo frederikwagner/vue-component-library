@@ -1,0 +1,21 @@
+@import "../../styles/shared/typography";
+
+.base-display-text {
+  margin: 0;
+}
+
+.base-display-text--size-small {
+  @include text-style-display-small;
+}
+
+.base-display-text--size-medium {
+  @include text-style-display-medium;
+}
+
+.base-display-text--size-large {
+  @include text-style-display-large;
+}
+
+.base-display-text--size-x-large {
+  @include text-style-display-x-large;
+}

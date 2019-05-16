@@ -14,14 +14,11 @@ const libConfig = require('../lib')
 const _ = require('lodash')
 const changeCase = require('change-case')
 
-console.info("🚀 Let's build this thing!")
+console.info('🚀 Starting build process!')
 
 // Update the index file
 console.info('📝 Updating index file')
 require('./update-index-file')
-
-// Get the names of all components in the src directory
-const componentNames = require('./component-names')
 
 // Get the binary for vue-cli-service
 const vueCliServicePath = getPath('../node_modules/.bin/vue-cli-service')
@@ -36,19 +33,6 @@ execSync(
 // Rename the CommonJS build so that it can be imported with
 // ${libConfig}/dist
 renameIndex()
-
-// For each component in the src directory...
-for (const componentName of componentNames) {
-  // Build the component individually
-  console.info(`🏗 Building ${componentName}`)
-  execSync(
-    `${vueCliServicePath} build src/${componentName}.vue --target lib --name index --dest dist/${componentName}/`
-  )
-
-  // Rename the CommonJS build so that it can be imported with
-  // ${libConfig}/dist/ComponentName
-  renameIndex(componentName)
-}
 
 if (process.env.VUE_APP_E2E) {
   const packagesDir = getPath('../packages')
@@ -224,7 +208,9 @@ function generatePackageJson(package) {
 }
 
 function generateReadme(package) {
-  const docsLink = `https://www.vuecomponentlibrary.com/components/${changeCase.snake(package.moduleName).replace(/_/g, '-')}.html`;
+  const docsLink = `https://www.vuecomponentlibrary.com/components/${changeCase
+    .snake(package.moduleName)
+    .replace(/_/g, '-')}.html`
 
   return `\
 # [${package.name}](${docsLink})

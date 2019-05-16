@@ -1,20 +1,18 @@
-/*
- * COPYRIGHT AND LICENSE
- * ---------------------
- * Originally authored by Chris Fritz (c) 2018 -> present
- * and licensed under the MIT License.
- * (https://github.com/chrisvfritz/hello-vue-components)
- */
-
-const fs = require('fs')
 const path = require('path')
+const recursiveReaddirSync = require('./recursive-readdir-sync')
 
-// Get all the .vue files in the src directory
-const componentFileNames = fs
-  .readdirSync(path.resolve(__dirname, '../src'))
+// Get all the .vue files in the src/components subdirectories
+const componentFileNames = recursiveReaddirSync(
+  path.resolve(__dirname, '../src/components')
+)
   .filter(componentFileName => /\.vue$/.test(componentFileName))
+  .map(componentFileName =>
+    componentFileName
+      // Remove extension from file name
+      .replace(/\.\w+$/, '')
+      // Remove path before file name
+      .replace(/^.*(\\|\/|:)/, '')
+  )
 
 // Get the names of the components from the file names
-module.exports = componentFileNames.map(componentFileName =>
-  componentFileName.replace(/\.\w+$/, '')
-)
+module.exports = componentFileNames

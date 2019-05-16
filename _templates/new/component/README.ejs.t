@@ -1,5 +1,5 @@
 ---
-to: docs/components/<%= h.components.toKebabCase(name) %>.md
+to: docs/components/<%= h.components.toPascalCase(name) %>.md
 ---
 # <%= h.components.toPascalCase(name) %>
 

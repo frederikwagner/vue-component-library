@@ -74,17 +74,8 @@ export default {
 }
 ```
 
-##### Individually packaged components
-
-If you only want to use a small subset of components, only import individually packaged components to reduce the size of your application:
-
-```js
-import BaseButton from 'vue-component-library.BaseButton'
-import BaseInput from 'vue-component-library.BaseInput'
-```
-
 ---
 
 ## Acknowledgments
 
-This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his *must-read* [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!
+This project is built on top of [Chris Fritz's](https://github.com/chrisvfritz) [hello-vue-components project](https://github.com/chrisvfritz/hello-vue-components) and heavily inspired by his _must-read_ [vue-enterprise-boilerplate](https://github.com/chrisvfritz/vue-enterprise-boilerplate) which is the gold-standard for Vue SPA projects. [This talk](https://youtu.be/7lpemgMhi0k) by Chris Fritz explains many of the patterns used and advocated in this project, and comes highly recommended - his energy is amazing!

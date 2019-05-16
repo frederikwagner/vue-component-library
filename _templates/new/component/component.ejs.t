@@ -1,5 +1,5 @@
 ---
-to: "src/<%= h.components.toPascalCase(name) %>.vue"
+to: "src/components/<%= h.components.toPascalCase(name) %>/<%= h.components.toPascalCase(name) %>.vue"
 ---
 <template>
   <div class="<%= h.components.toKebabCase(name) %>" />
@@ -12,5 +12,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "./styles/components/<%= h.components.toPascalCase(name) %>.scss";
+@import "./<%= h.components.toPascalCase(name) %>.scss";
 </style>

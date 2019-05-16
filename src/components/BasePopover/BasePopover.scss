@@ -1,0 +1,143 @@
+@import "../../styles/foundation/borders";
+@import "../../styles/foundation/colors";
+@import "../../styles/foundation/spacing";
+@import "../../styles/foundation/shadows";
+
+.base-popover {
+  position: relative;
+  width: min-content;
+  max-width: 100%;
+  height: min-content;
+}
+
+.base-popover__control {
+  position: absolute;
+  z-index: 1;
+  width: min-content;
+
+  &--align-top-left,
+  &--align-top-center,
+  &--align-top-right {
+    bottom: calc(100% + #{spacing("extra-tight")});
+  }
+  &--align-top-left {
+    left: 0;
+  }
+
+  &--align-top-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--align-top-right {
+    right: 0;
+  }
+
+  &--align-bottom-left,
+  &--align-bottom-center,
+  &--align-bottom-right {
+    top: calc(100% + #{spacing("extra-tight")});
+  }
+  &--align-bottom-left {
+    left: 0;
+  }
+
+  &--align-bottom-center {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--align-bottom-right {
+    right: 0;
+  }
+
+  &--align-right-top,
+  &--align-right-center,
+  &--align-right-bottom {
+    left: calc(100% + #{spacing("extra-tight")});
+  }
+  &--align-right-top {
+    top: 0;
+  }
+
+  &--align-right-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--align-right-bottom {
+    bottom: 0;
+  }
+
+  &--align-left-top,
+  &--align-left-center,
+  &--align-left-bottom {
+    right: calc(100% + #{spacing("extra-tight")});
+  }
+  &--align-left-top {
+    top: 0;
+  }
+
+  &--align-left-center {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--align-left-bottom {
+    bottom: 0;
+  }
+}
+
+.base-popover__card {
+  box-shadow: shadow("deep");
+  overflow-y: scroll;
+  background-color: color("white");
+  border-radius: border-radius();
+
+  &--padding-none {
+    padding: 0;
+  }
+
+  &--padding-extra-tight {
+    padding: spacing("extra-tight");
+  }
+
+  &--padding-tight {
+    padding: spacing("tight");
+  }
+
+  &--padding-base-tight {
+    padding: spacing("base-tight");
+  }
+
+  &--padding-base {
+    padding: spacing("base");
+  }
+
+  &--padding-loose {
+    padding: spacing("loose");
+  }
+
+  &--padding-extra-loose {
+    padding: spacing("extra-loose");
+  }
+}
+
+.scale-enter-active {
+  animation: scale 0.1s;
+}
+
+.scale-leave-active {
+  animation: scale 0.1s reverse;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

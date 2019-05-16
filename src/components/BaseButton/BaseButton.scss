@@ -1,0 +1,166 @@
+@import "../../styles/foundation/borders";
+@import "../../styles/foundation/colors";
+@import "../../styles/foundation/shadows";
+@import "../../styles/foundation/spacing";
+@import "../../styles/shared/typography";
+
+$button-size-extra-small: 24px;
+$button-size-small: 30px;
+$button-size-medium: 36px;
+$button-size-large: 48px;
+
+.base-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: $button-size-medium;
+  padding-right: spacing("base-tight");
+  padding-left: spacing("base-tight");
+  @include text-style-button();
+  @include text-emphasis-strong();
+  @include text-emphasis-subdued();
+  background-color: transparent;
+  outline: none;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  border-radius: border-radius();
+  cursor: pointer;
+  transition-property: box-shadow, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+
+  // &:hover {
+  //   box-shadow: shadow();
+  // }
+
+  &:active {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}
+
+.base-button--type-basic {
+  background-color: color("ink-alpha", "lightest");
+
+  &:hover {
+    background-color: color("ink-alpha", "lighter");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("blue", "light");
+  }
+}
+
+.base-button--type-primary {
+  color: color("white");
+  background-color: color("blue", "dark");
+
+  &:hover {
+    background-color: color("blue", "darker");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("blue", "light");
+  }
+}
+
+.base-button--type-success {
+  color: color("white");
+  background-color: color("green");
+
+  &:hover {
+    background-color: color("green", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("green", "light");
+  }
+}
+
+.base-button--type-warning {
+  color: color("ink");
+  background-color: color("yellow");
+
+  &:hover {
+    background-color: color("yellow", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("yellow", "light");
+  }
+}
+
+.base-button--type-danger {
+  color: color("white");
+  background-color: color("red");
+
+  &:hover {
+    background-color: color("red", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("red", "light");
+  }
+}
+
+.base-button--type-help {
+  color: color("white");
+  background-color: color("purple");
+
+  &:hover {
+    background-color: color("purple", "dark");
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px color("purple", "light");
+  }
+}
+
+.base-button--size-extra-small {
+  height: $button-size-extra-small;
+  padding-right: spacing("tight");
+  padding-left: spacing("tight");
+}
+
+.base-button--size-small {
+  height: $button-size-small;
+  padding-right: spacing("tight");
+  padding-left: spacing("tight");
+}
+
+.base-button--shape-square,
+.base-button--shape-circle {
+  padding: 0;
+
+  &.base-button--size-small {
+    height: $button-size-small !important;
+    width: $button-size-small !important;
+    max-height: $button-size-small !important;
+    max-width: $button-size-small !important;
+  }
+
+  &.base-button--size-medium {
+    height: $button-size-medium !important;
+    width: $button-size-medium !important;
+    max-height: $button-size-medium !important;
+    max-width: $button-size-medium !important;
+  }
+
+  &.base-button--size-large {
+    height: $button-size-large !important;
+    width: $button-size-large !important;
+    max-height: $button-size-large !important;
+    max-width: $button-size-large !important;
+  }
+}
+
+.base-button--shape-circle {
+  border-radius: 50%;
+}

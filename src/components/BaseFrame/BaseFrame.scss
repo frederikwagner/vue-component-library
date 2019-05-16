@@ -1,0 +1,70 @@
+@import "../../styles/foundation/colors";
+@import "../../styles/foundation/layout";
+@import "../../styles/foundation/shadows";
+@import "../../styles/shared/page";
+
+$top-bar-height: 56px;
+
+.base-frame {
+  position: relative;
+}
+
+.base-frame__top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  height: $top-bar-height;
+  width: 100%;
+  background-color: color("white");
+  box-shadow: shadow();
+}
+
+.base-frame__top-bar-left {
+  display: none;
+  height: 100%;
+  width: $navigation-width;
+
+  @include frame-when-nav-displayed {
+    display: block;
+  }
+}
+
+.base-frame__top-bar-right {
+  flex: 1 0 auto;
+}
+
+.base-frame__drawer {
+  position: fixed;
+  top: 0;
+  left: -$navigation-width;
+  height: 100%;
+  z-index: 1;
+  height: 100%;
+  width: $navigation-width;
+  border-right: 1px solid color("grey");
+
+  @include frame-when-nav-displayed {
+    left: 0;
+  }
+}
+
+.base-frame__page-wrapper {
+  width: 100%;
+
+  @include frame-when-nav-displayed {
+    padding-left: $navigation-width;
+  }
+}
+
+.base-frame--has-top-bar {
+  .base-frame__drawer {
+    top: $top-bar-height;
+    height: calc(100% - #{$top-bar-height});
+  }
+
+  .base-frame__page-wrapper {
+    padding-top: $top-bar-height;
+  }
+}

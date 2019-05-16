@@ -1,6 +1,7 @@
 # Component types
 
 Components are divided up into different types and prefixed in a way that makes it easy for the reader to understand the purpose of each component. The component files follow the official [Vue style guide](https://vuejs.org/v2/style-guide/#Component-files-strongly-recommended) recommendations for naming components:
+
 - [Component files](https://vuejs.org/v2/style-guide/#Component-files-strongly-recommended)
 - [Single-file component filename casing](https://vuejs.org/v2/style-guide/#Single-file-component-filename-casing-strongly-recommended)
 - [Base component names](https://vuejs.org/v2/style-guide/#Base-component-names-strongly-recommended)

@@ -14,7 +14,7 @@ module.exports = {
           ['/create/getting-started', 'Getting started'],
           ['/create/development', 'Development'],
           ['/create/project-structure', 'Project structure'],
-          ['/create/deployment', 'Deployment'],
+          ['/create/deployment', 'Deployment']
         ]
       },
       {
@@ -22,7 +22,7 @@ module.exports = {
         collapsable: false,
         children: [
           ['/use/getting-started', 'Getting started'],
-          ['/use/global-styles', 'Global styles'],
+          ['/use/global-styles', 'Global styles']
         ]
       },
       {
@@ -30,11 +30,9 @@ module.exports = {
         collapsable: false,
         children: [
           ['/components/component-types', 'Component types'],
-          ['/components/base-button', '<base-button>'],
-          ['/components/base-display-text', '<base-display-text>'],
-          ['/components/base-input', '<base-input>'],
+          ['/components/BaseButton', '<base-button>']
         ]
-      },
-    ],
+      }
+    ]
   }
 }

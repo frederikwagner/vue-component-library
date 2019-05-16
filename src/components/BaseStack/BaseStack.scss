@@ -1,0 +1,113 @@
+@import "../../styles/foundation/spacing";
+
+/// Adjusts the spacing for the stack and contained items.
+/// @param {String} $spacing - The spacing variant to use.
+
+@mixin stack-spacing($spacing: base) {
+  margin-top: -1 * spacing($spacing);
+  margin-left: -1 * spacing($spacing);
+
+  > .base-stack__item {
+    margin-top: spacing($spacing);
+    margin-left: spacing($spacing);
+    max-width: 100%;
+  }
+}
+
+.base-stack {
+  @include stack-spacing;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.base-stack--no-wrap {
+  flex-wrap: nowrap;
+}
+
+.base-stack--spacing-none {
+  @include stack-spacing(none);
+}
+
+.base-stack--spacing-extra-tight {
+  @include stack-spacing(extra-tight);
+}
+
+.base-stack--spacing-tight {
+  @include stack-spacing(tight);
+}
+
+.base-stack--spacing-loose {
+  @include stack-spacing(loose);
+}
+
+.base-stack--spacing-extra-loose {
+  @include stack-spacing(extra-loose);
+}
+
+.base-stack--distribution-leading {
+  justify-content: flex-start;
+}
+
+.base-stack--distribution-trailing {
+  justify-content: flex-end;
+}
+
+.base-stack--distribution-center {
+  justify-content: center;
+}
+
+.base-stack--distribution-equal-spacing {
+  justify-content: space-between;
+}
+
+.base-stack--distribution-fill > .base-stack__item {
+  flex: 1 1 auto;
+}
+
+.base-stack--distribution-fill-evenly > .base-stack__item {
+  flex: 1 1 auto;
+
+  @supports (min-width: fit-content) {
+    flex: 1 0 0%;
+    min-width: fit-content;
+  }
+}
+
+.base-stack--alignment-leading {
+  align-items: flex-start;
+}
+
+.base-stack--alignment-trailing {
+  align-items: flex-end;
+}
+
+.base-stack--alignment-center {
+  align-items: center;
+}
+
+.base-stack--alignment-fill {
+  align-items: stretch;
+}
+
+.base-stack--alignment-baseline {
+  align-items: baseline;
+}
+
+.base-stack--direction-vertical {
+  flex-direction: column;
+  margin-left: spacing(none);
+
+  > .base-stack__item {
+    margin-left: spacing(none);
+  }
+}
+
+.base-stack__item {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.base-stack__item--fill {
+  flex: 1 1 auto;
+}

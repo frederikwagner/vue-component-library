@@ -1,5 +1,5 @@
 ---
-to: "src/<%= h.components.toPascalCase(name) %>.unit.js"
+to: "src/components/<%= h.components.toPascalCase(name) %>/<%= h.components.toPascalCase(name) %>.unit.js"
 ---
 import <%= h.components.toPascalCase(name) %> from './<%= h.components.toPascalCase(name) %>';
 

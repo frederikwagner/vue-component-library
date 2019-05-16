@@ -1,0 +1,43 @@
+@import "../../styles/foundation/colors";
+@import "../../styles/foundation/borders";
+@import "../../styles/foundation/spacing";
+@import "../../styles/shared/typography";
+
+$code-padding: 0 spacing(extra-tight);
+$code-font-size: 1.15em;
+
+.base-text-style--variation-positive {
+  color: color('green', 'dark');
+}
+
+.base-text-style--variation-negative {
+  color: color('red', 'dark');
+}
+
+.base-text-style--variation-code {
+  position: relative;
+  padding: $code-padding;
+  border-radius: border-radius();
+  background-color: color('grey', 'light');
+  display: inline-block;
+  font-size: $code-font-size;
+  box-shadow: inset 0 0 0 1px color('grey');
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+  }
+}
+
+.base-text-style--variation-strong {
+  @include text-emphasis-strong;
+}
+
+.base-text-style--variation-subdued {
+  @include text-emphasis-subdued;
+}
